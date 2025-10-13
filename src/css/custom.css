@@ -1,0 +1,168 @@
+/**
+ * Custom CSS for minimalistic design
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/biro-script-plus');
+
+:root {
+  /* Typography */
+  --font-primary: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-handwritten: 'Biro Script Plus', cursive;
+
+  /* Font sizes */
+  --font-size-h1: 64px;
+  --font-size-h2: 40px;
+  --font-size-h3: 18px;
+  --font-size-body: 16px;
+  --font-size-lead: 16px;
+  --font-size-tag: 12px;
+  --font-size-handwritten: 50px;
+
+  /* Line heights */
+  --line-height-heading: 120%;
+  --line-height-body: 120%;
+  --line-height-handwritten: 110%;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+
+  /* Brand colors */
+  --brand-primary: #004837;
+  --brand-dark: #052F20;
+
+  /* Base colors */
+  --base-light: #FFFDF9;
+  --base-white: #FFFFFF;
+
+  /* Surface colors */
+  --surface-beige: #F2E9DE;
+
+  /* Text colors */
+  --text-primary: #004837;
+  --text-inverse: #FFFDF9;
+  --text-tag: #FF9916;
+
+  /* Accent colors */
+  --accent-primary: #FF9916;
+
+  /* Docusaurus theme mapping - Light theme */
+  --ifm-color-primary: #004837;
+  --ifm-color-primary-dark: #003d2f;
+  --ifm-color-primary-darker: #00362a;
+  --ifm-color-primary-darkest: #052F20;
+  --ifm-color-primary-light: #00553f;
+  --ifm-color-primary-lighter: #005c44;
+  --ifm-color-primary-lightest: #006b4e;
+
+  --ifm-background-color: #FFFDF9;
+  --ifm-background-surface-color: #F2E9DE;
+  --ifm-font-color-base: #004837;
+  --ifm-heading-color: #004837;
+  --ifm-link-color: #004837;
+  --ifm-link-hover-color: #052F20;
+
+  /* Docusaurus font overrides */
+  --ifm-font-family-base: var(--font-primary);
+  --ifm-font-size-base: var(--font-size-body);
+  --ifm-line-height-base: var(--line-height-body);
+
+  --ifm-heading-font-weight: var(--font-weight-semibold);
+  --ifm-h1-font-size: var(--font-size-h1);
+  --ifm-h2-font-size: var(--font-size-h2);
+  --ifm-h3-font-size: var(--font-size-h3);
+  --ifm-heading-line-height: var(--line-height-heading);
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 72, 55, 0.1);
+}
+
+/* Typography classes */
+h1 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-heading);
+}
+
+h2 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-heading);
+}
+
+h3 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-heading);
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+.lead {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lead);
+  line-height: var(--line-height-body);
+}
+
+.tag {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-tag);
+  line-height: var(--line-height-body);
+}
+
+.handwritten {
+  font-family: var(--font-handwritten);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-handwritten);
+  line-height: var(--line-height-handwritten);
+}
+
+[data-theme='dark'] {
+  /* Brand colors - Dark theme */
+  --brand-primary: #00b388;
+  --brand-dark: #008866;
+
+  /* Base colors - Dark theme */
+  --base-light: #1a1a1a;
+  --base-white: #0d0d0d;
+
+  /* Surface colors - Dark theme */
+  --surface-beige: #2a2520;
+
+  /* Text colors - Dark theme */
+  --text-primary: #FFFDF9;
+  --text-inverse: #004837;
+  --text-tag: #FFB347;
+
+  /* Accent colors - Dark theme */
+  --accent-primary: #FFB347;
+
+  /* Docusaurus theme mapping - Dark theme */
+  --ifm-color-primary: #00b388;
+  --ifm-color-primary-dark: #00a17a;
+  --ifm-color-primary-darker: #009873;
+  --ifm-color-primary-darkest: #007d5f;
+  --ifm-color-primary-light: #00c596;
+  --ifm-color-primary-lighter: #00cea0;
+  --ifm-color-primary-lightest: #1ae0b3;
+
+  --ifm-background-color: #1a1a1a;
+  --ifm-background-surface-color: #2a2520;
+  --ifm-font-color-base: #FFFDF9;
+  --ifm-heading-color: #FFFDF9;
+  --ifm-link-color: #00b388;
+  --ifm-link-hover-color: #00c596;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 179, 136, 0.15);
+}

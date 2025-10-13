@@ -1,0 +1,19 @@
+articles:
+  label: 'Articles'
+  permalink: '/articles-tag'
+  description: 'Articles and blog posts'
+
+tutorial:
+  label: 'Tutorial'
+  permalink: '/tutorial'
+  description: 'Tutorial articles'
+
+guide:
+  label: 'Guide'
+  permalink: '/guide'
+  description: 'How-to guides'
+
+news:
+  label: 'News'
+  permalink: '/news'
+  description: 'Latest news and updates'

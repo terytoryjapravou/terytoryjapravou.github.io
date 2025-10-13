@@ -1,0 +1,24 @@
+opportunities:
+  label: 'Opportunities'
+  permalink: '/opportunities-tag'
+  description: 'Career and project opportunities'
+
+job:
+  label: 'Job'
+  permalink: '/job'
+  description: 'Job openings'
+
+internship:
+  label: 'Internship'
+  permalink: '/internship'
+  description: 'Internship opportunities'
+
+volunteer:
+  label: 'Volunteer'
+  permalink: '/volunteer'
+  description: 'Volunteer positions'
+
+grant:
+  label: 'Grant'
+  permalink: '/grant'
+  description: 'Grant opportunities'

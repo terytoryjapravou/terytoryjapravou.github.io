@@ -1,0 +1,28 @@
+.section {
+  background-color: var(--surface-beige);
+}
+
+.content {
+  min-height: 704px;
+  max-width: var(--screen-lg);
+  margin: 0 auto;
+
+  background-image: url('./assets/bird.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+
+  padding-block: 133px;
+  padding-inline: 20px;
+}
+
+.slogan {
+  color: var(--text-primary);
+  font-size: var(--font-size-h1);
+  line-height: 77px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-left: 11%;
+  max-width: 60%;
+}

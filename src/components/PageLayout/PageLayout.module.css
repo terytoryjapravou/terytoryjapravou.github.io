@@ -1,0 +1,36 @@
+.pageWrapper {
+  min-height: 100%;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .container {
+  margin: 0 auto;
+  padding: 0 var(--ifm-spacing-horizontal);
+}
+
+.contentWrapper {
+  padding: var(--ifm-spacing-vertical) 0;
+}
+
+.heroSection {
+  background: var(--ifm-color-primary-lightest);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.heroSection h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.heroSection p {
+  font-size: 1.25rem;
+  color: var(--ifm-color-secondary-darkest);
+  max-width: 600px;
+  margin: 0 auto;
+}

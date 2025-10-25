@@ -1,0 +1,33 @@
+.section {
+  min-height: 704px;
+  background-color: var(--base-light);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.2) 2px, transparent 2px);
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: repeat;
+
+  overflow: hidden;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  max-width: var(--screen-lg);
+  padding-inline: 120px;
+  padding-block: 48px;
+
+  margin-inline: auto;
+}
+
+.title {
+  font-size: var(--font-size-h1);
+  margin-bottom: 0;
+}
+
+.cardsGroup {
+  margin-top: 131px;
+  align-self: flex-end;
+}

@@ -1,0 +1,14 @@
+.cardsGroup {
+  position: relative;
+
+  width: 996px;
+  height: 400px;
+}
+
+.card {
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(calc(var(--idx) * 180px)) translateY(calc(var(--idx) * -96px)) translateZ(0);
+  z-index: calc(100 - var(--idx));
+}

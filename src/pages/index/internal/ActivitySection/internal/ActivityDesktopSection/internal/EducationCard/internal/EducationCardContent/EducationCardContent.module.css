@@ -1,0 +1,64 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+
+  gap: 50px;
+
+  padding-inline: 44px;
+  margin-top: -20px;
+
+  color: var(--text-primary);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  flex-grow: 1;
+  flex-basis: 0;
+
+  gap: 20px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.textContent {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  max-width: 248px;
+
+  b {
+    letter-spacing: 1.1px;
+  }
+}
+
+.listContent {
+  padding-left: 0;
+  list-style: none;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 18px;
+  font-size: var(--font-size-tag);
+  line-height: 18px;
+}
+
+.listItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('./assets/check.svg');
+}

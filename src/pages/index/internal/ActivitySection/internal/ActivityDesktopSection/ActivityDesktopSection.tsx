@@ -1,5 +1,5 @@
 import styles from './ActivityDesktopSection.module.css'
-import { EducationCard } from './internal/EducationCard'
+import { EducationCard } from './internal/EducationCard/EducationCard'
 import { ActivityCardsGroup } from './internal/ActivityCardsGroup/ActivityCardsGroup'
 import { TPCourseCard } from './internal/TPCourseCard'
 import { WebinarsCard } from './internal/WebinarsCard'

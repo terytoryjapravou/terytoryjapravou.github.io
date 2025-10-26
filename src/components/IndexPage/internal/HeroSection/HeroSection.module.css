@@ -27,10 +27,10 @@
   font-size: 140px;
   line-height: 180px;
   text-transform: uppercase;
+}
 
-  .titleSecond {
-    align-self: flex-end;
-  }
+.titleSecond {
+  align-self: flex-end;
 }
 
 .description {
@@ -77,11 +77,10 @@
 
     font-size: 48px;
     line-height: 120%;
+  }
 
-
-    .titleSecond {
-      align-self: unset;
-    }
+  .titleSecond {
+    align-self: unset;
   }
 
   .description {

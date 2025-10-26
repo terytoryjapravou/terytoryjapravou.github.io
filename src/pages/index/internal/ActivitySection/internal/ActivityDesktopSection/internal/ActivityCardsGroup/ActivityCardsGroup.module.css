@@ -1,0 +1,12 @@
+.cardsGroup {
+  position: relative;
+
+  width: 996px;
+  height: 400px;
+}
+
+.card {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

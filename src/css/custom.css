@@ -79,6 +79,28 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 72, 55, 0.1);
 }
 
+@media (max-width: 996px) {
+  :root {
+  /* Font sizes mobile */
+  --font-size-h1: 24px;
+  --font-size-h2: 20px;
+  --font-size-h3: 16px;
+  --font-size-body: 14px;
+  --font-size-lead: 16px;
+  --font-size-tag: 12px;
+  --font-size-handwritten: 50px;
+
+  /* Line heights mobile */
+  --line-height-heading: 120%;
+  --line-height-body: 120%;
+  --line-height-handwritten: 110%;
+
+  /* Font weights mobile */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  }
+}
+
 body {
   background-color: var(--base-light);
 }

@@ -3,6 +3,7 @@ import type {Props} from '@theme/Footer/Layout';
 import { Sticker } from './Sticker/Sticker';
 
 import styles from './Layout.module.css';
+import { FooterContent } from './FooterContent/FooterContent';
 
 export default function FooterLayout({
   links,
@@ -13,6 +14,8 @@ export default function FooterLayout({
     <footer className={styles.footer}>
       <Sticker />
       <div className={styles.container}>
+        <FooterContent />
+
         {links}
         {(logo || copyright) && (
           <div className="footer__bottom text--center">

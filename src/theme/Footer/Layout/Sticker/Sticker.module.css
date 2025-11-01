@@ -30,7 +30,7 @@
 
 .slogan {
   font-family: var(--font-handwritten);
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-handwritten);
   line-height: var(--line-height-handwritten);
   text-align: center;
 }

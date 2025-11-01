@@ -13,3 +13,9 @@
   padding-inline: 120px;
   padding-bottom: 96px;
 }
+
+@media (max-width: 996px) {
+  .container {
+    padding: 0;
+  }
+}

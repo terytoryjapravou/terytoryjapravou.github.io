@@ -89,11 +89,13 @@ const config: Config = {
   ],
 
   themeConfig: {
+
     colorMode: {
       defaultMode: 'light',
-      disableSwitch: false,
-      respectPrefersColorScheme: true,
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
+
     navbar: {
       title: 'Тэрыторыя правоў',
       hideOnScroll: false,
@@ -120,14 +122,14 @@ const config: Config = {
         // },
       ],
     },
-    footer: {
-      style: 'light',
-      copyright: `© ${new Date().getFullYear()} Тэрыторыя правоў`,
-    },
+
+    footer: {},
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+
   } satisfies Preset.ThemeConfig,
 };
 

@@ -1,0 +1,21 @@
+.footer {
+  background-color: var(--brand-primary);
+  color: var(--text-inverse);
+
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+
+  overflow: hidden;
+}
+
+.container {
+  padding-top: 64px;
+  padding-inline: 120px;
+  padding-bottom: 96px;
+}
+
+@media (max-width: 996px) {
+  .container {
+    padding: 0;
+  }
+}

@@ -1,0 +1,31 @@
+.section {
+  background-color: var(--surface-beige);
+}
+
+.opportunities {
+  max-width: var(--screen-lg);
+  margin-inline: auto;
+
+  padding-block: 48px;
+  padding-inline: 120px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+
+  overflow-x: auto;
+}
+
+@media (max-width: 996px) {
+  .opportunities {
+    padding: 0;
+  }
+
+  .content {
+    padding-top: 16px;
+    padding-inline: 16px;
+    padding-bottom: 32px;
+  }
+}

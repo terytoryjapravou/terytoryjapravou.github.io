@@ -1,0 +1,7 @@
+{
+  "name": "docusaurus-plugin-blog-tags-json-generator",
+  "version": "1.0.0",
+  "description": "Generate static JSON files with blog tags data at build time",
+  "main": "index.ts",
+  "private": true
+}

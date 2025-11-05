@@ -1,19 +1,35 @@
-articles:
-  label: 'Articles'
-  permalink: '/articles-tag'
-  description: 'Articles and blog posts'
+person:
+  label: 'Асоба'
+  permalink: '/person'
 
-tutorial:
-  label: 'Tutorial'
-  permalink: '/tutorial'
-  description: 'Tutorial articles'
+top:
+  label: 'Топ-падборка'
+  permalink: '/top'
 
-guide:
-  label: 'Guide'
-  permalink: '/guide'
-  description: 'How-to guides'
+calendar:
+  label: 'Праваабарончыкалендар'
+  permalink: '/calendar'
+
+analysis:
+  label: 'Разборправа'
+  permalink: '/analysis'
+
+art:
+  label: 'Мастацтва'
+  permalink: '/art'
+
+belarusian-language:
+  label: 'Беларуская мова'
+  permalink: '/belarusian-language'
+
+research:
+  label: 'Даследванні'
+  permalink: '/research'
+
+theory:
+  label: 'Тэорыя'
+  permalink: '/theory'
 
 news:
-  label: 'News'
+  label: 'Навіны'
   permalink: '/news'
-  description: 'Latest news and updates'

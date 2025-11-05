@@ -1,24 +1,19 @@
-opportunities:
-  label: 'Opportunities'
-  permalink: '/opportunities-tag'
-  description: 'Career and project opportunities'
-
 job:
-  label: 'Job'
+  label: 'Вакансіі'
   permalink: '/job'
-  description: 'Job openings'
+
+competition:
+  label: 'Конкурсы і гранты'
+  permalink: '/competition'
+
+education:
+  label: 'Курсы і адукацыя'
+  permalink: '/education'
 
 internship:
-  label: 'Internship'
+  label: 'Стажыроўкі'
   permalink: '/internship'
-  description: 'Internship opportunities'
 
-volunteer:
-  label: 'Volunteer'
-  permalink: '/volunteer'
-  description: 'Volunteer positions'
-
-grant:
-  label: 'Grant'
-  permalink: '/grant'
-  description: 'Grant opportunities'
+event:
+  label: 'Канфэрэнцыі і мерапрыемствы'
+  permalink: '/event'

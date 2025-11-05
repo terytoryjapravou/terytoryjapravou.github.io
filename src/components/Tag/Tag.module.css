@@ -18,6 +18,8 @@
   letter-spacing: 0.3px;
 
   transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+
+  text-transform: lowercase;
 }
 
 .link:hover {

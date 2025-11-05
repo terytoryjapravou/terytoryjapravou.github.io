@@ -3,12 +3,13 @@ import { EducationCard } from './internal/EducationCard/EducationCard'
 import { ActivityCardsGroup } from './internal/ActivityCardsGroup/ActivityCardsGroup'
 import { TPCourseCard } from './internal/TPCourseCard'
 import { WebinarsCard } from './internal/WebinarsCard'
+import { SectionHeader } from '@site/src/components/SectionHeader/SectionHeader'
 
 export const ActivityDesktopSection = () => {
   return (
     <section className={styles.section}>
       <div className={styles.contentWrapper}>
-        <h2 className={styles.title}>Наша дзейнасць</h2>
+        <SectionHeader title="Наша дзейнасць" />
 
         <ActivityCardsGroup className={styles.cardsGroup}>
           <TPCourseCard />

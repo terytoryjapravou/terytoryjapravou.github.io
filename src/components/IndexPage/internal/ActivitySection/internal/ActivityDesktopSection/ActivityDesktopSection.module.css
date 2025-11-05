@@ -20,11 +20,6 @@
   margin-inline: auto;
 }
 
-.title {
-  font-size: var(--font-size-h1);
-  margin-bottom: 0;
-}
-
 .cardsGroup {
   margin-top: 131px;
   align-self: flex-end;

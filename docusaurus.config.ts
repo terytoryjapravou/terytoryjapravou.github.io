@@ -73,6 +73,32 @@ const config: Config = {
         onUntruncatedBlogPosts: 'warn',
       },
     ],
+    [
+      './plugins/blogJsonGeneratorPlugin',
+      {
+        id: 'articles-json',
+        blogPluginId: 'articles',
+        outputPath: 'static/data',
+        limit: 5,
+      },
+    ],
+    [
+      './plugins/blogJsonGeneratorPlugin',
+      {
+        id: 'opportunities-json',
+        blogPluginId: 'opportunities',
+        outputPath: 'static/data',
+        limit: 3,
+      },
+    ],
+    [
+      './plugins/blogTagsJsonGeneratorPlugin',
+      {
+        id: 'articles-tags-json',
+        blogPluginId: 'articles',
+        outputPath: 'static/data',
+      },
+    ],
   ],
 
   presets: [

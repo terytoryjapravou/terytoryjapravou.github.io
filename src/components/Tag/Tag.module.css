@@ -1,0 +1,27 @@
+.tag {
+  appearance: none;
+  display: inline-block;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--accent-primary);
+
+  background-color: inherit;
+  color: var(--text-tag);
+
+  padding-block: 5px;
+  padding-inline: 6px;
+
+  font-size: var(--font-size-tag);
+  line-height: var(--line-height-body);
+  border-radius: 5px;
+  letter-spacing: 0.3px;
+
+  transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.link:hover {
+  background-color: var(--accent-primary);
+  color: var(--base-light);
+  text-decoration: none;
+}

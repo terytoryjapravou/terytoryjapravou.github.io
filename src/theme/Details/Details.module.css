@@ -1,0 +1,63 @@
+.details {
+  --docusaurus-details-decoration-color: var(--ifm-alert-border-color);
+  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
+
+  padding: 48px;
+  margin: 0 0 var(--ifm-spacing-vertical);
+
+  border: none;
+  box-shadow: none;
+  border-radius: 8px;
+
+  color: var(--text-primary);
+  background-color: var(--surface-beige);
+
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-heading);
+  font-weight: var(--font-weight-semibold);
+}
+
+.details > summary {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-heading);
+  font-weight: var(--font-weight-semibold);
+
+  padding: 0;
+  padding-right: 15px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details > summary::before {
+  display: none;
+}
+
+.details > summary::after {
+  display: block;
+  content: '';
+  transform: rotate(45deg) translateX(-50%) translateZ(0);
+  border-color: var(--accent-primary);
+  border-style: solid;
+
+  border-top-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 6px;
+  border-right-width: 6px;
+
+  height: 24px;
+  width: 24px;
+
+  transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.details[open] > summary::after {
+  transform: rotate(225deg) translateY(-50%) translateZ(0);
+}
+
+/* collapsibleContent is here */
+.details > div > div {
+  margin-top: 30px;
+}

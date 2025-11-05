@@ -1,7 +1,6 @@
 ---
 slug: lorem-ipsum-opportunity
 title: Consectetur Adipiscing Elit Opportunity
-authors: [admin]
 tags: [opportunities]
 ---
 

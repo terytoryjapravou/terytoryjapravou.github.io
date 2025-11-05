@@ -1,6 +1,5 @@
 ---
 title: Lorem Ipsum Dolor Sit Amet
-authors: [admin]
 tags: [articles]
 ---
 

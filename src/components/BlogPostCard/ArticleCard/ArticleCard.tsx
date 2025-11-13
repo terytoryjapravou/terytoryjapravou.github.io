@@ -1,12 +1,8 @@
-import { BlogPost } from "@site/src/hooks/useBlogData";
 import style from "./ArticleCard.module.css"
-import { Tag } from "@site/src/components/Tag/Tag";
+import { Tag } from "@site/src/components/Tag/Tag"
+import { BlogPostCardProps } from "../BlogPostCardProps"
 
-type ArticleCardProps = {
-  post: BlogPost
-}
-
-export const ArticleCard = function ({post}: ArticleCardProps) {
+export const ArticleCard = function ({post}: BlogPostCardProps) {
   return (
     <a href={post.permalink} className={style.card}>
       {post.image && <img className={style.previewImage} src={post.image} alt={post.title} />}

@@ -2,10 +2,9 @@ import { useLoadBlogData } from "@site/src/hooks/useBlogData"
 import { useWindowSize } from '@docusaurus/theme-common'
 
 import styles from "./RecentArticlesSection.module.css"
-import { Tag } from "@site/src/components/Tag/Tag"
-import { ArticleCard } from "./ArticleCard/ArticleCard"
+import { ArticleCard } from "../../../BlogPostCard/ArticleCard/ArticleCard"
 import { SectionHeader } from "../../../SectionHeader/SectionHeader"
-import { useBlogTags } from "@site/src/hooks/useBlogTags"
+import { TagsCard } from "./TagsCard/TagsCard"
 
 export const RecentArticlesSection = () => {
   const { posts, loading } = useLoadBlogData('articles')
@@ -33,25 +32,5 @@ export const RecentArticlesSection = () => {
         </div>
       </div>
     </section>
-  )
-}
-
-
-const TagsCard = () => {
-  const screenSize = useWindowSize()
-  const { tags, loading } = useBlogTags('articles')
-
-  if (screenSize === 'mobile') return null
-  if (loading) return null
-  if (tags.length === 0) return null
-
-  console.log('tags', tags)
-
-  return (
-    <nav className={styles.tags}>
-      {tags.map((tag) =>
-        <Tag key={tag.permalink} href={tag.permalink}>{tag.label}</Tag>
-      )}
-    </nav>
   )
 }

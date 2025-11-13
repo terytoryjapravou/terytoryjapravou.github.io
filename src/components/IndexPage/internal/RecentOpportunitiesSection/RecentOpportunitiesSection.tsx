@@ -2,10 +2,10 @@ import { SectionHeader } from "@site/src/components/SectionHeader/SectionHeader"
 import styles from "./RecentOpportunitiesSection.module.css";
 import { useWindowSize } from "@docusaurus/theme-common";
 import { useLoadBlogData } from "@site/src/hooks/useBlogData";
-import { OpportunityCard } from "./OpportunityCard/OpportunityCard";
+import { OpportunityCard } from "../../../BlogPostCard/OpportunityCard/OpportunityCard";
 
 export function RecentOpportunitiesSection() {
-  const { posts, loading } = useLoadBlogData('articles')
+  const { posts, loading } = useLoadBlogData('opportunities')
   const screenSize = useWindowSize()
 
   const articlesCount = screenSize === 'mobile' ? 1 : 3

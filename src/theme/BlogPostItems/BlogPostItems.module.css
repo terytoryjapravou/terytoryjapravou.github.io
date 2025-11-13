@@ -1,0 +1,28 @@
+.section {
+  background-color: var(--surface-beige);
+  flex-grow: 1;
+}
+
+.wrapper {
+  max-width: var(--screen-lg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  gap: 24px;
+
+  padding-block: 48px;
+  padding-inline: 120px;
+
+  margin-inline: auto;
+}
+
+
+@media (max-width: 996px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+
+    padding-inline: 32px;
+    gap: 16px;
+  }
+}

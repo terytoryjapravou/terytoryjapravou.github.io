@@ -1,0 +1,35 @@
+.NavLink {
+  padding-inline: 24px;
+  padding-block: 16px;
+
+  color: var(--text-tag);
+
+  border: 1px solid var(--accent-primary);
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  flex-grow: 1;
+}
+
+.NavLink:hover {
+  background-color: var(--accent-primary);
+  color: var(--base-light);
+  text-decoration: none;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 150%;
+}
+
+
+@media (max-width: 996px) {
+  .title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,32 @@
+.footer {
+  padding-block: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-heading);
+
+  border-bottom: 1px solid var(--brand-primary);
+  padding-bottom: 16px;
+  margin-bottom: 0;
+}
+
+.linkWrapper {
+  border-bottom: 1px solid var(--brand-primary);
+  padding-bottom: 16px;
+}
+
+.link {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-heading);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--text-tag);
+  text-decoration: none;
+}

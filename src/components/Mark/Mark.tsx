@@ -3,7 +3,7 @@ import { PropsWithChildren } from 'react'
 import styles from './Mark.module.css'
 
 type MarkProps = PropsWithChildren<{
-  variant: 'rounded' | 'underline'
+  variant: 'rounded' | 'underline' | 'handwritten'
   className?: string
 }>
 

@@ -1,22 +1,38 @@
 .section {
   position: relative;
   background-color: var(--brand-dark);
-  color:var(--base-light);
+  color: var(--base-light);
 
+  /* Height that allows for scroll-triggered horizontal scroll */
+  height: 400vh;
+  overflow: visible;
+}
+
+.stickyContainer {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.scrollContent {
+  position: relative;
   display: flex;
   flex-direction: row;
   gap: 48px;
 
-  padding-top:32px;
+  padding-top: 32px;
   padding-bottom: 48px;
   padding-inline: 120px;
 
-  max-width: 100%;
   min-height: 704px;
-  overflow-x: hidden;
+  min-width: 4340px;
+  will-change: transform;
 }
 
-.section > * {
+.scrollContent > * {
   z-index: 1;
   position: relative;
 }
@@ -56,4 +72,162 @@
   z-index: 0;
   left: 970px;
   top: 306px;
+}
+
+.location {
+  position: absolute;
+  z-index: 0;
+  left: 1058px;
+  top: 245px;
+}
+
+.calendar {
+  position: absolute;
+  z-index: 0;
+  left: 1209px;
+  top: 71px;
+}
+
+.ptushka {
+  position: absolute;
+  z-index: 0;
+  left: 1592px;
+  top: 188px;
+}
+
+.milestone {
+  position: absolute;
+  max-width: 265px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.milestoneTitle {
+  color: var(--text-tag);
+  font-family: var(--font-handwritten);
+  font-size: 48px;
+  line-height: var(--line-height-handwritten);
+  margin-bottom: 0;
+  word-break: keep-all;
+}
+
+.milestonePicture {
+  margin-inline: auto;
+}
+
+.milestoneDescription {
+  color: var(--text-inverse);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-heading);
+  margin-bottom: 0;
+}
+
+.m1 {
+  left: 1937px;
+  top: 178px;
+}
+
+.m1 .milestonePicture {
+  margin-inline-start: 76px;
+  margin-bottom: 25px;
+}
+
+.m1 .milestoneTitle {
+  margin-bottom: 65px;
+}
+
+.m2 {
+  left: 2277px;
+  top: 201px;
+}
+
+.m2 .milestoneTitle {
+  margin-bottom: 68px;
+}
+
+.m2 .milestonePicture {
+  margin-inline-start: 99px;
+  margin-bottom: 34px;
+}
+
+.m3 {
+  left: 2623px;
+  top: 239px;
+}
+
+.m3 .milestonePicture {
+  margin-inline-start: 44px;
+  margin-bottom: 42px;
+}
+
+.m4 {
+  left: 2949px;
+  top: 112px;
+}
+
+.m4 .milestonePicture {
+  margin-inline-start: 89px;
+  margin-bottom: 13px;
+}
+
+.m4 .milestoneTitle {
+  margin-bottom: 95px;
+}
+
+.m5 {
+  left: 3307px;
+  top: 233px;
+}
+
+.m5 .milestoneTitle {
+  margin-bottom: 112px;
+}
+
+.m5 .milestonePicture {
+  margin-inline-start: 0;
+  margin-bottom: 28px;
+}
+
+.m6 {
+  top: 184px;
+  left: 3619px;
+
+  min-width: 300px;
+}
+
+.m6 .milestoneTitle {
+  margin-bottom: 24px;
+}
+
+.m6 .milestonePicture {
+  margin-inline-start: 211px;
+  margin-bottom: 62px;
+}
+
+.m6 .milestoneDescription {
+  margin-left: 59px;
+}
+
+.m7 {
+  top: 87px;
+  left: 4032px;
+  margin-right: 120px;
+}
+
+.m7 .milestonePicture {
+  margin-inline-start: 0;
+  margin-bottom: 36px;
+}
+
+.m7 .milestoneTitle {
+  margin-left: 37px;
+  margin-bottom: 99px;
+}
+
+@media (max-width: 996px) {
+  .scrollContent {
+    padding-top: 16px;
+    padding-inline: 16px;
+  }
 }

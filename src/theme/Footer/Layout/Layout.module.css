@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--brand-primary);
-  color: var(--text-inverse);
+  color: var(--base-light);
 
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;

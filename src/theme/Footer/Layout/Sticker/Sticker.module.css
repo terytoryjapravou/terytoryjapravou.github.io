@@ -33,4 +33,6 @@
   font-size: var(--font-size-handwritten);
   line-height: var(--line-height-handwritten);
   text-align: center;
+  text-transform: uppercase;
+  color: var(--base-light);
 }

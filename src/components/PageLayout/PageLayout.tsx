@@ -1,18 +1,17 @@
-import React from 'react';
+import React, { JSX, PropsWithChildren, ReactNode } from 'react';
 import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 import clsx from 'clsx';
 import styles from './PageLayout.module.css';
 
-type PageLayoutProps = {
-  title: string;
-  description?: string;
-  children: React.ReactNode;
-  noFooter?: boolean;
-  wrapperClassName?: string;
-  headChildren?: React.ReactNode;
-  image?: string;
-}
+type PageLayoutProps = PropsWithChildren<{
+  title: string
+  description?: string
+  noFooter?: boolean
+  wrapperClassName?: string
+  headChildren?: ReactNode
+  image?: string
+}>
 
 export function PageLayout({
   title,
@@ -22,7 +21,7 @@ export function PageLayout({
   wrapperClassName,
   headChildren,
   image,
-}: PageLayoutProps): React.JSX.Element {
+}: PageLayoutProps): JSX.Element {
   return (
     <Layout
       title={title}
@@ -36,7 +35,6 @@ export function PageLayout({
         {image && <meta property="og:image" content={image} />}
         {headChildren}
       </Head>
-
       <main className={styles.main}>
         {children}
       </main>

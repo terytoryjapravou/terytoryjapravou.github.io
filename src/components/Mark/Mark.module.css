@@ -1,0 +1,30 @@
+.span {
+  position: relative;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  overflow: visible;
+}
+
+.rounded::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: url(./assets/Rounded.png);
+  background-size: 100% 100%;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: url(./assets/Underline.png);
+  background-size: 100% 100%;
+  height: 8px;
+}

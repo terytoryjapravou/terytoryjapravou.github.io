@@ -2,9 +2,9 @@ import { useLoadBlogData } from "@site/src/hooks/useBlogData"
 import { useWindowSize } from '@docusaurus/theme-common'
 
 import styles from "./RecentArticlesSection.module.css"
-import { ArticleCard } from "../../../BlogPostCard/ArticleCard/ArticleCard"
-import { SectionHeader } from "../../../SectionHeader/SectionHeader"
 import { TagsCard } from "./TagsCard/TagsCard"
+import { SectionHeader } from "@site/src/components/SectionHeader/SectionHeader"
+import { ArticleCard } from "@site/src/components/BlogPostCard/ArticleCard/ArticleCard"
 
 export const RecentArticlesSection = () => {
   const { posts, loading } = useLoadBlogData('articles')

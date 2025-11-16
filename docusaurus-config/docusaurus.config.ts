@@ -49,6 +49,9 @@ const config: Config = {
       {
         docs: false,
         blog: false,
+        pages: {
+          exclude: ['**/internal/**'],
+        },
         theme: {
           customCss: './src/css/custom.css',
         },

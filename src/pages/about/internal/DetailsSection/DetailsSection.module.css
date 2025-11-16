@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: var(--screen-lg);
+  margin: auto;
+
+  padding-inline: 120px;
+  padding-block: 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 996px) {
+  .wrapper {
+    padding-inline: 16px;
+    padding-block: 16px;
+    gap: 8px;
+  }
+}

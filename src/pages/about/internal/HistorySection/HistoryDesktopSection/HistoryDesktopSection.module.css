@@ -23,7 +23,7 @@
   flex-direction: row;
   gap: 48px;
 
-  padding-top: 32px;
+  padding-top: 64px;
   padding-bottom: 48px;
   padding-inline: 120px;
 
@@ -61,7 +61,7 @@
 
 .map {
   position: absolute;
-  top: 0;
+  top: 30px;
   bottom: 0;
   left: 591px;
   z-index: 0;
@@ -71,28 +71,28 @@
   position: absolute;
   z-index: 0;
   left: 970px;
-  top: 306px;
+  top: 336px;
 }
 
 .location {
   position: absolute;
   z-index: 0;
   left: 1058px;
-  top: 245px;
+  top: 275px;
 }
 
 .calendar {
   position: absolute;
   z-index: 0;
   left: 1209px;
-  top: 71px;
+  top: 101px;
 }
 
 .ptushka {
   position: absolute;
   z-index: 0;
   left: 1592px;
-  top: 188px;
+  top: 218px;
 }
 
 .milestone {
@@ -106,10 +106,11 @@
 .milestoneTitle {
   color: var(--text-tag);
   font-family: var(--font-handwritten);
-  font-size: 48px;
+  font-size: 50px;
   line-height: var(--line-height-handwritten);
   margin-bottom: 0;
   word-break: keep-all;
+  white-space: nowrap;
 }
 
 .milestonePicture {
@@ -125,7 +126,7 @@
 
 .m1 {
   left: 1937px;
-  top: 178px;
+  top: 208px;
 }
 
 .m1 .milestonePicture {
@@ -139,7 +140,7 @@
 
 .m2 {
   left: 2277px;
-  top: 201px;
+  top: 231px;
 }
 
 .m2 .milestoneTitle {
@@ -153,7 +154,7 @@
 
 .m3 {
   left: 2623px;
-  top: 239px;
+  top: 273px;
 }
 
 .m3 .milestonePicture {
@@ -163,7 +164,7 @@
 
 .m4 {
   left: 2949px;
-  top: 112px;
+  top: 142px;
 }
 
 .m4 .milestonePicture {
@@ -177,7 +178,7 @@
 
 .m5 {
   left: 3307px;
-  top: 233px;
+  top: 263px;
 }
 
 .m5 .milestoneTitle {
@@ -190,7 +191,7 @@
 }
 
 .m6 {
-  top: 184px;
+  top: 214px;
   left: 3619px;
 
   min-width: 300px;
@@ -210,7 +211,7 @@
 }
 
 .m7 {
-  top: 87px;
+  top: 117px;
   left: 4032px;
   margin-right: 120px;
 }
@@ -227,11 +228,61 @@
 
 @media (max-width: 996px) {
   .scrollContent {
-    padding-top: 16px;
+    padding-top: 82px;
     padding-inline: 16px;
+    min-width: 3750px;
   }
 
   .descriptionWrapper {
     max-width: calc(100vw - 32px);
+  }
+
+  .map {
+    left: 0;
+  }
+
+  .timeline {
+    left: 380px;
+  }
+
+  .location {
+    left: 468px;
+  }
+
+  .calendar {
+    left: 619px;
+  }
+
+  .ptushka {
+    left: 1002px;
+  }
+
+  .m1 {
+    left: 1347px;
+  }
+
+  .m2 {
+    left: 1687px;
+  }
+
+  .m3 {
+    left: 2033px;
+  }
+
+
+  .m4 {
+    left: 2359px;
+  }
+
+  .m5 {
+    left: 2717px;
+  }
+
+  .m6 {
+    left: 3029px;
+  }
+
+  .m7 {
+    left: 3442px;
   }
 }

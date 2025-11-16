@@ -224,3 +224,10 @@
   margin-left: 37px;
   margin-bottom: 99px;
 }
+
+@media (max-width: 996px) {
+  .scrollContent {
+    padding-top: 16px;
+    padding-inline: 16px;
+  }
+}

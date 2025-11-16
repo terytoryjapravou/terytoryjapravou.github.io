@@ -13,7 +13,7 @@ import Laptop from './assets/Laptop.png'
 import Sun from './assets/Sun.png'
 
 import clsx from 'clsx'
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { useScroll, useTransform, motion } from 'motion/react'
 import { Mark } from '@site/src/components/Mark/Mark'
 
@@ -72,13 +72,30 @@ const milestones = [
 export const HistoryDesktopSection = () => {
   const sectionRef = useRef<HTMLElement>(null)
   const contentRef = useRef<HTMLDivElement>(null)
+  const [scrollEnd, setScrollEnd] = useState('-67%')
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ['start start', 'end end']
   })
 
-  const x = useTransform(scrollYProgress, [0, 1], ['0%', '-67%'])
+  useEffect(() => {
+    const calculateScrollEnd = () => {
+      if (contentRef.current) {
+        const contentWidth = contentRef.current.scrollWidth
+        const viewportWidth = window.innerWidth
+        const scrollDistance = contentWidth - viewportWidth
+        const percentage = -(scrollDistance / contentWidth) * 100
+        setScrollEnd(`${percentage.toFixed(2)}%`)
+      }
+    }
+
+    calculateScrollEnd()
+    window.addEventListener('resize', calculateScrollEnd)
+    return () => window.removeEventListener('resize', calculateScrollEnd)
+  }, [])
+
+  const x = useTransform(scrollYProgress, [0, 1], ['0%', scrollEnd])
 
   return (
     <section ref={sectionRef} className={styles.section}>

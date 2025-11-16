@@ -28,3 +28,10 @@
   background-size: 100% 100%;
   height: 8px;
 }
+
+.handwritten {
+  color: var(--text-tag);
+  font-family: var(--font-handwritten);
+  font-size: 1.3em;
+  line-height: 1.3em;
+}

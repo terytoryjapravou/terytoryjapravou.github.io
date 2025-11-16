@@ -1,23 +1,38 @@
 .section {
   position: relative;
   background-color: var(--brand-dark);
-  color:var(--base-light);
+  color: var(--base-light);
 
+  /* Height that allows for scroll-triggered horizontal scroll */
+  height: 400vh;
+  overflow: visible;
+}
+
+.stickyContainer {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.scrollContent {
+  position: relative;
   display: flex;
   flex-direction: row;
   gap: 48px;
 
-  padding-top:32px;
+  padding-top: 32px;
   padding-bottom: 48px;
   padding-inline: 120px;
 
   min-height: 704px;
-  overflow-x: hidden;
-
   min-width: 4340px;
+  will-change: transform;
 }
 
-.section > * {
+.scrollContent > * {
   z-index: 1;
   position: relative;
 }

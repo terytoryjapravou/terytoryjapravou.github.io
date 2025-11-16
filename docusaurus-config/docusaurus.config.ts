@@ -7,7 +7,7 @@ import { buildConfigOpportunitiesPlugins } from './buildConfigOpportunitiesPlugi
 const config: Config = {
   title: 'Тэрыторыя правоў',
   tagline: 'Асветніцка-адукацыйная ініцыятыва пра правы чалавека для прадстаў_ніц беларускага грамадства',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   url: 'https://terytoryja-pravou.org',
   baseUrl: '/',

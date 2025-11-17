@@ -39,6 +39,10 @@
   text-decoration: none;
 }
 
+.link:hover {
+  color: var(--accent-primary);
+}
+
 .social {
   display: flex;
   flex-direction: column;

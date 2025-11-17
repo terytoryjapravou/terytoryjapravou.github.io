@@ -3,6 +3,9 @@ import styles from './FooterContent.module.css'
 
 import IgLogo from './assets/IgLogo.svg'
 import TgLogo from './assets/TgLogo.svg'
+import FbLogo from './assets/fbLogo.svg'
+
+import { FB_LINK, IG_LINK, TG_LINK, MAIL_ADDRESS, MAIL_LINK } from '@site/src/constants/socialLinks'
 
 export const FooterContent = () => {
   return (
@@ -13,18 +16,16 @@ export const FooterContent = () => {
           <div className={styles.title}>Кантакты</div>
           <div className={styles.mailWrapper}>
             <span>Email:</span>
-            <a
-              className={styles.link}
-              href="mailto:contact@terytoryja-pravou.org"
-            >contact@terytoryja-pravou.org</a>
+            <a className={styles.link} href={MAIL_LINK}>{MAIL_ADDRESS}</a>
           </div>
         </div>
 
         <div className={styles.social}>
           <div className={styles.title}>Нашы пляцоўкі</div>
           <div className={styles.socialWrapper}>
-            <a className={styles.link} target='_blank' href="https://www.instagram.com/terytoryja_pravou/"><IgLogo /></a>
-            <a className={styles.link} target='_blank' href="https://t.me/terytoryja_pravou"><TgLogo /></a>
+            <a className={styles.link} target='_blank' rel="noopener noreferrer" href={IG_LINK}><IgLogo /></a>
+            <a className={styles.link} target='_blank' rel="noopener noreferrer" href={TG_LINK}><TgLogo /></a>
+            <a className={styles.link} target='_blank' rel="noopener noreferrer" href={FB_LINK}><FbLogo /></a>
           </div>
         </div>
 

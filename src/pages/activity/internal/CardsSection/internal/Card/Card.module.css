@@ -10,5 +10,7 @@
   .card {
     padding-inline: 16px;
     padding-block: 32px;
+
+    border-radius: 5px;
   }
 }

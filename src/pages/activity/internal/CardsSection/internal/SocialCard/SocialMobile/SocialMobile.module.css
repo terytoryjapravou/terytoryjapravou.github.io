@@ -1,0 +1,37 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.socialCard {
+  display: grid;
+  gap: 16px;
+
+  grid-template-areas:
+    'link1 content'
+    'link2 content';
+}
+
+.content {
+  grid-area: content;
+
+  font-size: var(--font-size-h3);
+  line-height: 130%;
+  font-weight: var(--font-weight-semibold);
+}
+
+.tg {
+  grid-area: link1;
+  justify-self: center;
+}
+
+.ig {
+  grid-area: link1;
+  justify-self: center;
+}
+
+.fb {
+  grid-area: link2;
+  justify-self: center;
+}

@@ -1,0 +1,14 @@
+.card {
+  padding: 32px;
+  border-radius: 8px;
+  background-color: var(--base-white);
+
+  border: 1px solid var(--brand-primary);
+}
+
+@media (max-width: 996px) {
+  .card {
+    padding-inline: 16px;
+    padding-block: 32px;
+  }
+}

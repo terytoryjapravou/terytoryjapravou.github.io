@@ -66,4 +66,16 @@
   .details {
     padding: 16px;
   }
+
+  .details > summary {
+    padding-right: 5px;
+  }
+
+  .details > summary::after {
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+
+    height: 8px;
+    width: 8px;
+  }
 }

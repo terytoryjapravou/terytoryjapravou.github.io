@@ -95,7 +95,7 @@ export const HistoryDesktopSection = () => {
     return () => window.removeEventListener('resize', calculateScrollEnd)
   }, [])
 
-  const x = useTransform(scrollYProgress, [0, 1], ['0%', scrollEnd])
+  const x = useTransform(scrollYProgress, [0, 0.03, 0.97, 1], ['0%', '0%', scrollEnd, scrollEnd])
 
   return (
     <section ref={sectionRef} className={styles.section}>
@@ -122,7 +122,7 @@ export const HistoryDesktopSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.6, delay: index * 0.05 }}
             >
               {milestone.pictureFirst && (
                 <img src={milestone.picture} alt="" className={styles.milestonePicture} />

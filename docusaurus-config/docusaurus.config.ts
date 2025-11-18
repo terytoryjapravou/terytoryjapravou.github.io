@@ -86,6 +86,11 @@ const config: Config = {
           label: 'Магчымасці',
           position: 'left',
         },
+        {
+          to: '/activity',
+          label: 'Дзейнасць',
+          position: 'left',
+        },
 
         // {
         //   type: 'localeDropdown',

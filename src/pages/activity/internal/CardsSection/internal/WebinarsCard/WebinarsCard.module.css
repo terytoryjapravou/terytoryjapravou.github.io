@@ -1,0 +1,95 @@
+.card {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  row-gap: 32px;
+  column-gap: 64px;
+  grid-template-areas:
+    "title   image"
+    "content image"
+    ".       image"
+    "tg      .    "
+  ;
+  padding-bottom: 80px;
+}
+
+.title {
+  grid-area: title;
+  font-size: var(--font-size-h2);
+  margin: 0;
+}
+
+.image {
+  grid-area: image;
+}
+
+.content {
+  grid-area: content;
+
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-heading);
+}
+
+.tg {
+  grid-area: tg;
+
+  display: flex;
+  gap: 35px;
+
+  max-width: 320px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.tg:hover {
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+.tgLogo {
+  min-width: 45px;
+  min-height: 40px;
+}
+
+@media (max-width: 996px) {
+  .title {
+    grid-area: title;
+    font-size: var(--font-size-h1);
+    margin: 0;
+  }
+
+  .content {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "image"
+      "content"
+      "tg"
+    ;
+    row-gap: 32px;
+    column-gap: 0;
+    padding-bottom: 40px;
+  }
+
+  .tg {
+    flex-direction: row-reverse;
+    color: var(--text-inverse);
+    background-color: var(--brand-primary);
+    padding-inline: 16px;
+    padding-block: 30px;
+    border-radius: 5px;
+    max-width: none;
+  }
+
+  .tgLogo {
+    min-width: 65px;
+    min-height: 55px;
+    color: var(--accent-primary)
+  }
+}

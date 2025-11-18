@@ -1,6 +1,7 @@
 import styles from './CardsSection.module.css'
 import { EducationCourseCard } from './internal/EducationCourseCard/EducationCourseCard'
 import { SocialCard } from './internal/SocialCard/SocialCard'
+import { WebinarsCard } from './internal/WebinarsCard/WebinarsCard'
 
 export function CardsSection() {
   return (
@@ -8,6 +9,7 @@ export function CardsSection() {
       <div className={styles.wrapper}>
         <EducationCourseCard />
         <SocialCard />
+        <WebinarsCard />
       </div>
     </section>
   )

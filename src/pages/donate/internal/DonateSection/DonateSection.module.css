@@ -13,8 +13,9 @@
   column-gap: 24px;
 
   grid-template-areas:
-    " coffee coffee coffee coffee coffee coffee stripe stripe stripe stripe stripe stripe "
-    " .      .      tax    tax    tax    tax    tax    tax    tax    tax    .      .      "
+    " coffee coffee coffee   coffee   coffee   coffee   stripe   stripe   stripe   stripe   stripe stripe "
+    " .      .      tax      tax      tax      tax      tax      tax      tax      tax      .      .      "
+    " .      .      personal personal personal personal personal personal personal personal .      .      "
   ;
 }
 
@@ -28,4 +29,9 @@
 
 .tax {
   grid-area: tax;
+  margin-bottom: 54px;
+}
+
+.personal {
+  grid-area: personal;
 }

@@ -1,0 +1,24 @@
+.personal {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-heading);
+  text-align: center;
+}
+
+.link {
+  align-self: start;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lead);
+  line-height: var(--line-height-body);
+}
+
+.link:hover {
+  text-decoration: none;
+  color: var(--accent-primary);
+}

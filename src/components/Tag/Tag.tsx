@@ -4,10 +4,11 @@ import clsx from 'clsx'
 
 type TagProps = PropsWithChildren<{
   href?: string
+  className?: string
 }>
 
-export function Tag({ children, href }: TagProps) {
+export function Tag({ children, href, className }: TagProps) {
   return href ?
-    <a href={href} className={clsx(styles.tag, styles.link)}>{children}</a> :
-    <span className={styles.tag}>{children}</span>
+    <a href={href} className={clsx(styles.tag, styles.link, className)}>{children}</a> :
+    <span className={clsx(styles.tag, className)}>{children}</span>
 }

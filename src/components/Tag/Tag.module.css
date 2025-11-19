@@ -20,6 +20,7 @@
   transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
 
   text-transform: lowercase;
+  text-align: center;
 }
 
 .link:hover {

@@ -1,0 +1,60 @@
+.section {
+  background-color: var(--surface-beige);
+}
+
+.wrapper {
+  padding-top: 64px;
+  padding-bottom: 130px;
+  padding-inline: 120px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  column-gap: 24px;
+
+  grid-template-areas:
+    " coffee coffee coffee   coffee   coffee   coffee   stripe   stripe   stripe   stripe   stripe stripe "
+    " .      .      tax      tax      tax      tax      tax      tax      tax      tax      .      .      "
+    " .      .      personal personal personal personal personal personal personal personal .      .      "
+  ;
+}
+
+.coffee {
+  grid-area: coffee;
+}
+
+.stripe {
+  grid-area: stripe;
+}
+
+.tax {
+  grid-area: tax;
+  margin-bottom: 54px;
+}
+
+.personal {
+  grid-area: personal;
+}
+
+
+@media (max-width: 996px) {
+  .wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-inline: 16px;
+
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+
+    grid-template-areas:
+      "coffee"
+      "stripe"
+      "tax"
+      "personal"
+    ;
+  }
+
+  .tax {
+    margin-bottom: 0;
+  }
+}

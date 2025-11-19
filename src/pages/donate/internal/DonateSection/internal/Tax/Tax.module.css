@@ -1,0 +1,50 @@
+.tax {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount {
+  margin-top: 64px;
+
+  font-family: var(--font-handwritten);
+  font-size: 100px;
+  line-height: 110%;
+
+  text-align: center;
+  color: var(--accent-primary);
+}
+
+.description {
+  text-align: center;
+
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-heading);
+
+  margin-bottom: 24px;
+}
+
+.details {
+  margin-bottom: 29px;
+}
+
+.noteTitle {
+  font-size: 50px;
+  line-height: 80%;
+}
+
+.note {
+  margin-bottom: 24px;
+}
+
+.instruction {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.tag[class] {
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: none;
+}
+

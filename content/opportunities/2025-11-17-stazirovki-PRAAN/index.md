@@ -1,7 +1,7 @@
 ---
 title: Стажыроўкі ПРААН у Вашынгтоне ў 2026 годзе
 tags: [internship]
-image: "./photo_2025-11-12-riza.jpeg"
+image: "./photo_2025-11-19-stazitowka-PRAAN.jpeg"
 ---
 # Стажыроўкі ПРААН у Вашынгтоне ў 2026 годзе
 

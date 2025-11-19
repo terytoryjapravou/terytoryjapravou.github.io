@@ -1,0 +1,68 @@
+.card {
+  padding: 16px;
+  padding-bottom: 32px;
+
+  border: 1px solid var(--brand-primary);
+  border-radius: 5px;
+
+  column-gap: 24px;
+  row-gap: 9px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    " title    title    title    title    title    title    "
+    " subtitle subtitle subtitle subtitle subtitle subtitle "
+    " content  content  content  content  content  content  "
+    " tag      tag      tag      tag      tag      tag      "
+  ;
+
+  transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  transform: translateZ(0) scale(1.02);
+  text-decoration: none;
+}
+
+.title {
+  grid-area: title;
+  position: relative;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-heading);
+  justify-self: center;
+  margin-bottom: 0;
+}
+
+.title::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: url(./assets/underline.png);
+  background-size: 100% 100%;
+  height: 8px;
+}
+
+.subtitle {
+  grid-area: subtitle;
+  justify-self: center;
+  margin-bottom: 9px;
+}
+
+.content {
+  grid-area: content;
+  justify-self: center;
+  margin-bottom: 9px;
+}
+
+.tag[class] {
+  grid-area: tag;
+  text-transform: none;
+  align-self: end;
+}

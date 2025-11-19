@@ -3,7 +3,6 @@ import { MAIL_ADDRESS, MAIL_LINK } from "@site/src/constants/socialLinks"
 import styles from './Personal.module.css'
 import { Mark } from "@site/src/components/Mark/Mark"
 
-
 type PersonalProps = {
   className?: string
 }

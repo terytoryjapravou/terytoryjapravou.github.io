@@ -22,3 +22,13 @@
   text-decoration: none;
   color: var(--accent-primary);
 }
+
+@media (max-width: 996px) {
+  .personal {
+    gap: 16px;
+  }
+
+  .title {
+    align-self: start;
+  }
+}

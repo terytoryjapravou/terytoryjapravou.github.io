@@ -91,6 +91,11 @@ const config: Config = {
           label: 'Дзейнасць',
           position: 'left',
         },
+        {
+          to: '/donate',
+          label: 'Падтрымаць',
+          position: 'left',
+        },
 
         // {
         //   type: 'localeDropdown',

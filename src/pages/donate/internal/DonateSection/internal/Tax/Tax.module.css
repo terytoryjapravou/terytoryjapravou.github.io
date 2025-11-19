@@ -48,3 +48,30 @@
   text-transform: none;
 }
 
+@media (max-width: 996px) {
+  .amount {
+    margin-top: 0;
+    font-size: 60px;
+  }
+
+  .description {
+    margin-bottom: 16px;
+  }
+
+  .details {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 20px;
+  }
+
+  .note {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 14px;
+  }
+
+  .instruction {
+    align-self: start;
+    margin-bottom: 12px;
+  }
+}

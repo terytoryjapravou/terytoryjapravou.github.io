@@ -35,3 +35,26 @@
 .personal {
   grid-area: personal;
 }
+
+
+@media (max-width: 996px) {
+  .wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-inline: 16px;
+
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+
+    grid-template-areas:
+      "coffee"
+      "stripe"
+      "tax"
+      "personal"
+    ;
+  }
+
+  .tax {
+    margin-bottom: 0;
+  }
+}

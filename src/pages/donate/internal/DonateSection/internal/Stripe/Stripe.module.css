@@ -66,3 +66,42 @@
   text-transform: none;
   align-self: end;
 }
+
+@media (max-width: 996px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      " title    "
+      " subtitle "
+      " content  "
+      " tag      "
+    ;
+    row-gap: 0;
+  }
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lead);
+    line-height: var(--line-height-body);
+
+    justify-self: start;
+
+    margin-bottom: 16px;
+  }
+
+  .content {
+    margin-bottom: 45px;
+    padding-inline: 0;
+    padding-left: 40px;
+  }
+
+  .tag[class] {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lead);
+    line-height: var(--line-height-body);
+  }
+}

@@ -25,7 +25,7 @@ export function Coffee({ className }: CoffeeProps) {
         </li>
       </ul>
 
-      <Tag className={styles.tag}>Адкрыць Buy Me a coffee</Tag>
+      <Tag className={styles.tag}>Адкрыць Buy Me a Coffee</Tag>
     </a>
   )
 }

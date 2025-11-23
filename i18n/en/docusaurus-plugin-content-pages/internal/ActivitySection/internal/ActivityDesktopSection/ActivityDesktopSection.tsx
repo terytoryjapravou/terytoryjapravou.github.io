@@ -9,7 +9,7 @@ export const ActivityDesktopSection = () => {
   return (
     <section className={styles.section}>
       <div className={styles.contentWrapper}>
-        <SectionHeader title="Our Activities" />
+        <SectionHeader title={<a href="/en/activity">Our Activities</a>} />
 
         <ActivityCardsGroup className={styles.cardsGroup}>
           <TPCourseCard />

@@ -21,6 +21,7 @@ export function buildConfigOpportunitiesPlugins(): PluginConfig[] {
         onInlineAuthors: 'warn',
         onUntruncatedBlogPosts: 'warn',
         postsPerPage: 6,
+        exclude: ['**/**draft**/**'],
       },
     ],
 

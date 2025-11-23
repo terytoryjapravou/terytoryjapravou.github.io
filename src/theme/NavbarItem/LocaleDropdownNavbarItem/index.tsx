@@ -52,12 +52,20 @@ export default function LocaleDropdownNavbarItem({
     // preserve ?search#hash suffix on locale switches
     const to = `${baseTo}${search}${hash}${queryString}`;
 
+    // Save locale preference to localStorage when clicked
+    const onClick = () => {
+      if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
+        localStorage.setItem('docusaurus.locale', locale);
+      }
+    };
+
     return {
       label: localeConfigs[locale]!.label,
       lang: localeConfigs[locale]!.htmlLang,
       to,
       target: '_self',
       autoAddBaseUrl: false,
+      onClick,
       className:
         // eslint-disable-next-line no-nested-ternary
         locale === currentLocale

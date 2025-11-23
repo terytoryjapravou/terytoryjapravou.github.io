@@ -81,11 +81,15 @@ const config: Config = {
           to: '/articles',
           label: 'Артыкулы',
           position: 'left',
+          // Hide for English locale - content not translated
+          docsPluginId: 'default',
         },
         {
           to: '/opportunities',
           label: 'Магчымасці',
           position: 'left',
+          // Hide for English locale - content not translated
+          docsPluginId: 'default',
         },
         {
           to: '/activity',

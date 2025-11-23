@@ -1,0 +1,20 @@
+{
+  "title": {
+    "message": "Territory of Rights"
+  },
+  "item.label.Пра нас": {
+    "message": "About"
+  },
+  "item.label.Артыкулы": {
+    "message": "Articles"
+  },
+  "item.label.Магчымасці": {
+    "message": "Opportunities"
+  },
+  "item.label.Дзейнасць": {
+    "message": "Activity"
+  },
+  "item.label.Падтрымаць": {
+    "message": "Support"
+  }
+}

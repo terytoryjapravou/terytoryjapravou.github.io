@@ -21,19 +21,20 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'be',
-    locales: ['be'],
+    locales: ['be', 'en'],
     path: 'i18n',
     localeConfigs: {
       be: {
         label: 'Беларуская',
         direction: 'ltr',
         htmlLang: 'be-BY',
-
+        path: 'be',
       },
       en: {
         label: 'English',
         direction: 'ltr',
         htmlLang: 'en-US',
+        path: 'en',
       },
     },
   },
@@ -97,10 +98,10 @@ const config: Config = {
         //   position: 'left',
         // },
 
-        // {
-        //   type: 'localeDropdown',
-        //   position: 'right',
-        // },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
       ],
     },
 

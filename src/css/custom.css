@@ -140,6 +140,15 @@ body {
   line-height: var(--line-height-body);
 }
 
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--accent-primary);
+}
+
 .lead {
   font-family: var(--font-primary);
   font-weight: var(--font-weight-semibold);

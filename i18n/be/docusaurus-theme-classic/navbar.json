@@ -1,0 +1,32 @@
+{
+  "title": {
+    "message": "Тэрыторыя правоў"
+  },
+  "item.label.about": {
+    "message": "Пра нас"
+  },
+  "item.label.articles": {
+    "message": "Артыкулы"
+  },
+  "item.label.opportunities": {
+    "message": "Магчымасці"
+  },
+  "item.label.activity": {
+    "message": "Дзейнасць"
+  },
+  "item.label.donate": {
+    "message": "Падтрымаць"
+  },
+  "item.label.Пра нас": {
+    "message": "Пра нас"
+  },
+  "item.label.Артыкулы": {
+    "message": "Артыкулы"
+  },
+  "item.label.Магчымасці": {
+    "message": "Магчымасці"
+  },
+  "item.label.Дзейнасць": {
+    "message": "Дзейнасць"
+  }
+}

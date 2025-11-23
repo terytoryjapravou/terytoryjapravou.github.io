@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Магчымасці",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "Адукацыя, стыпендыі, стажыроўкі, гранты і падзеі ў сферы правоў чалавека. Тут вы знойдзеце тое, што дапаможа развівацца і дзейнічаць кожнаму і кожнай.",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Recent posts",
+    "description": "The label for the left sidebar"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Артыкулы",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "\n    Тут мы сабралі ўсе нашы матэрыялы пра правы чалавека: ад разбораў законаў да асабістых гісторый, ад тэорыі да мастацтва.\n    Выбірайце тэгі, каб хутчэй знайсці патрэбнае, або проста гартайце галоўныя матэрыялы ніжэй.",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Recent posts",
+    "description": "The label for the left sidebar"
+  }
+}

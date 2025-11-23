@@ -3,11 +3,14 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@site/*": ["./*"]
+      "@site/*": [
+        "./*"
+      ]
     }
   },
   "include": [
     "src/**/*",
-    "plugins/**/*"
+    "plugins/**/*",
+    "i18n/**/*"
   ]
 }

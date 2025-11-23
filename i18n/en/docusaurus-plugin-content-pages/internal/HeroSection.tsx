@@ -1,6 +1,7 @@
 import styles from '@site/src/pages/internal/HeroSection/HeroSection.module.css'
 import { useWindowSize } from '@docusaurus/theme-common'
 import { MapImage } from '@site/src/pages/internal/HeroSection/internal/MapImage'
+import { Button } from '@site/src/components/Button/Button'
 
 export const HeroSection = () => {
   const windowSize = useWindowSize()
@@ -16,8 +17,10 @@ export const HeroSection = () => {
         <div className={styles.description}>
           Educational initiative on human rights for representatives of Belarusian society
         </div>
+        <Button href="/en/about" className={styles.moreButton}>Learn more</Button>
         {windowSize === 'mobile' && <MapImage className={styles.mobileMapImage} />}
       </div>
+      {windowSize === 'desktop' && <MapImage className={styles.mapHoverHandler} />}
     </section>
   )
 }

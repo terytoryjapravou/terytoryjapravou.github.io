@@ -40,12 +40,36 @@
   letter-spacing: 0.4pt;
 }
 
-.desktopMapImage {
+.desktopMapImage,
+.mapHoverHandler
+{
   position: absolute;
   top: 68px;
   bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
+  transition: color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.mapHoverHandler {
+  opacity: 0;
+}
+
+.desktopMapImage:has(~ .mapHoverHandler > path:hover) {
+  color: var(--accent-primary);
+}
+
+.moreButton[class] {
+  color: var(--text-inverse);
+
+  position: absolute;
+  inset-inline-end: 120px;
+  inset-block-end: 104px;
+
+  padding-inline: 24px;
+  padding-block: 16px;
+  font-size: 32px;
+  line-height: 150%;
 }
 
 .mobileMapImage {
@@ -87,6 +111,13 @@
     font-size: 24px;
     text-align: center;
 
+    margin-bottom: 34px;
+  }
+
+  .moreButton[class] {
+    position: static;
+
+    margin-inline: auto;
     margin-bottom: 34px;
   }
 }

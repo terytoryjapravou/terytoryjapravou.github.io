@@ -30,7 +30,7 @@
 .primary {
   color: var(--text-inverse);
   background-color: var(--brand-primary);
-  border-color: var(--brand-primary)
+  border-color: currentColor;
 }
 
 .primary:hover,
@@ -38,29 +38,24 @@
 .primary:active {
   color: var(--text-inverse);
   background-color: var(--accent-primary);
-  border-color: var(--accent-primary);
 }
 
 .primary:disabled {
   color: var(--text-inverse);
   background-color: var(--surface-beige);
-  border-color: var(--surface-beige);
 }
 
 
 .secondary {
   color: var(--text-primary);
-  border-color: var(--brand-primary)
 }
 
 .secondary:hover,
 .secondary:focus-visible,
 .secondary:active {
   color: var(--text-tag);
-  border-color: var(--accent-primary);
 }
 
 .secondary:disabled {
   color: var(--surface-beige);
-  border-color: var(--surface-beige);
 }

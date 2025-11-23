@@ -2,6 +2,7 @@
 title: "«🌱 RIZA: будуем еўрапейскую дэмакратыю разам з жанчынамі-мігранткамі»"
 tags: [competition]
 image: "./photo_2025-11-12-riza.jpeg"
+hide_table_of_contents: true
 ---
 # 🌱 RIZA: будуем еўрапейскую дэмакратыю разам з жанчынамі-мігранткамі
 

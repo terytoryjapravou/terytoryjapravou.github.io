@@ -2,6 +2,7 @@ import clsx from 'clsx'
 
 import styles from './Coffee.module.css'
 import { Tag } from '@site/src/components/Tag/Tag'
+import { BUY_ME_A_COFFEE_LINK } from '@site/src/constants/donateLink'
 
 type CoffeeProps = {
   className?: string
@@ -9,7 +10,7 @@ type CoffeeProps = {
 
 export function Coffee({ className }: CoffeeProps) {
   return (
-    <a href="#" target='_blank' rel="noopener noreferrer" className={clsx(styles.card, className)}>
+    <a href={BUY_ME_A_COFFEE_LINK} target='_blank' rel="noopener noreferrer" className={clsx(styles.card, className)}>
       <h3 className={styles.title}>Buy Me a Coffee</h3>
 
       <span className={styles.subtitle}>Адным клікам можна:</span>

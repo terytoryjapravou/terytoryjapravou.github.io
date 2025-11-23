@@ -23,6 +23,7 @@ export function buildConfigArticlesPlugins(): PluginConfig[] {
         onInlineAuthors: 'warn',
         onUntruncatedBlogPosts: 'warn',
         postsPerPage: 8,
+        exclude: ['**/**draft**/**'],
       },
     ],
     [

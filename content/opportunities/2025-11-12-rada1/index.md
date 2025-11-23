@@ -2,6 +2,7 @@
 title: «РАДА» запрашае на праграму па камьюніці-білдынгу «Цяпліца»
 tags: [education]
 image: "./photo_2025-11-12-16.42.15.jpeg"
+hide_table_of_contents: true
 ---
 # «РАДА» запрашае на праграму па камьюніці-білдынгу «Цяпліца»
 
@@ -60,4 +61,4 @@ image: "./photo_2025-11-12-16.42.15.jpeg"
 
 Калі засталіся пытанні — пішыце на **study.help@rada.fm**.
 
-[**Падаць заяўку**](https://docs.google.com/forms/d/e/1FAIpQLScdGe8Ac2EJzgHxn-L_3gtTP496X0azukZpeJuJKx-aEz0Meg/viewform) 
+[**Падаць заяўку**](https://docs.google.com/forms/d/e/1FAIpQLScdGe8Ac2EJzgHxn-L_3gtTP496X0azukZpeJuJKx-aEz0Meg/viewform)

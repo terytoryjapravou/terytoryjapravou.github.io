@@ -18,6 +18,7 @@ export const HeroSection = () => {
         </div>
         {windowSize === 'mobile' && <MapImage className={styles.mobileMapImage} />}
       </div>
+      {windowSize === 'desktop' && <MapImage className={styles.mapHoverHandler} />}
     </section>
   )
 }

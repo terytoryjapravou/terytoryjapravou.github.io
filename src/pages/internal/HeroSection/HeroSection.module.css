@@ -40,13 +40,25 @@
   letter-spacing: 0.4pt;
 }
 
-.desktopMapImage {
+.desktopMapImage,
+.mapHoverHandler
+{
   position: absolute;
   top: 68px;
   bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
+  transition: color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
 }
+
+.mapHoverHandler {
+  opacity: 0;
+}
+
+.desktopMapImage:has(~ .mapHoverHandler > path:hover) {
+  color: var(--accent-primary);
+}
+
 
 .mobileMapImage {
   width: 100%;

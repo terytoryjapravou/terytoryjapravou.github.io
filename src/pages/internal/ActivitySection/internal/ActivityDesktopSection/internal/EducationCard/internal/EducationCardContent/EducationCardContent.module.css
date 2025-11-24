@@ -33,10 +33,10 @@
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   max-width: 248px;
+}
 
-  b {
-    letter-spacing: 1.1px;
-  }
+.textContent b {
+  letter-spacing: 1.1px;
 }
 
 .listContent {

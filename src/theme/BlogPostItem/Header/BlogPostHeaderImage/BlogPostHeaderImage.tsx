@@ -1,4 +1,4 @@
-import {useBlogPost} from '@docusaurus/plugin-content-blog/client'
+import { useBlogPost } from '@docusaurus/plugin-content-blog/client'
 
 import styles from './BlogPostHeaderImage.module.css'
 

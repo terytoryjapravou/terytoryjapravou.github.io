@@ -1,6 +1,10 @@
 .image {
-  max-height: 416px;
+  height: 416px;
   max-width: 656px;
+  object-fit: contain;
+
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 @media (max-width: 996px) {

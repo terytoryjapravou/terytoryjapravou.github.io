@@ -71,6 +71,10 @@ const config: Config = {
     navbar: {
       title: 'Тэрыторыя правоў',
       hideOnScroll: false,
+      logo: {
+        alt: 'Тэрыторыя правоў',
+        src: 'img/logo.svg',
+      },
       items: [
         {
           to: '/about',

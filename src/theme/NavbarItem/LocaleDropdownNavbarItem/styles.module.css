@@ -2,3 +2,44 @@
   vertical-align: text-bottom;
   margin-right: 5px;
 }
+
+.localeButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+  text-transform: uppercase;
+
+  margin-left: 24px;
+
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-heading);
+}
+
+.activeLocale {
+  font-weight: bold;
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+.inactiveLocale {
+  color: inherit;
+  text-decoration: none;
+}
+
+.inactiveLocale:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.separator {
+  color: inherit;
+  user-select: none;
+}
+
+@media (max-width: 996px) {
+  :global(.navbar__items) .localeButtons {
+    display: none;
+  }
+}

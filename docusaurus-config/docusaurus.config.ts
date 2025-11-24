@@ -16,7 +16,7 @@ const config: Config = {
   projectName: 'terytoryja-pravou.org',
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
@@ -71,35 +71,39 @@ const config: Config = {
     navbar: {
       title: 'Тэрыторыя правоў',
       hideOnScroll: false,
+      logo: {
+        alt: 'Тэрыторыя правоў',
+        src: 'img/logo.svg',
+      },
       items: [
         {
           to: '/about',
           label: 'Пра нас',
-          position: 'left',
+          position: 'right',
         },
         {
           to: '/articles',
           label: 'Артыкулы',
-          position: 'left',
+          position: 'right',
           // Hide for English locale - content not translated
           docsPluginId: 'default',
         },
         {
           to: '/opportunities',
           label: 'Магчымасці',
-          position: 'left',
+          position: 'right',
           // Hide for English locale - content not translated
           docsPluginId: 'default',
         },
         {
           to: '/activity',
           label: 'Дзейнасць',
-          position: 'left',
+          position: 'right',
         },
         {
           to: '/donate',
           label: 'Падтрымаць',
-          position: 'left',
+          position: 'right',
         },
 
         {

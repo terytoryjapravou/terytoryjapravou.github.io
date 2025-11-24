@@ -1,29 +1,21 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useAlternatePageUtils } from '@docusaurus/theme-common/internal';
-import { translate } from '@docusaurus/Translate';
 import { useLocation } from '@docusaurus/router';
-import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
-import IconLanguage from '@theme/Icon/Language';
-import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';
+import Link from '@docusaurus/Link';
 import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem';
 
 import styles from './styles.module.css';
 
 export default function LocaleDropdownNavbarItem({
-  mobile,
-  dropdownItemsBefore,
-  dropdownItemsAfter,
   queryString = '',
   ...props
 }: Props): JSX.Element {
   const {
     i18n: { currentLocale, locales, localeConfigs, defaultLocale },
   } = useDocusaurusContext();
-  const alternatePageUtils = useAlternatePageUtils();
   const { search, hash, pathname } = useLocation();
 
-  const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
+  const localeItems = locales.map((locale): { locale: string; to: string; onClick: () => void; isActive: boolean } => {
     // Remove current locale prefix from pathname
     let cleanPathname = pathname;
 
@@ -48,9 +40,7 @@ export default function LocaleDropdownNavbarItem({
       }
     }
 
-    const baseTo = `pathname://${targetUrl}`;
-    // preserve ?search#hash suffix on locale switches
-    const to = `${baseTo}${search}${hash}${queryString}`;
+    const to = `${targetUrl}${search}${hash}${queryString}`;
 
     // Save locale preference to localStorage when clicked
     const onClick = () => {
@@ -60,47 +50,29 @@ export default function LocaleDropdownNavbarItem({
     };
 
     return {
-      label: localeConfigs[locale]!.label,
-      lang: localeConfigs[locale]!.htmlLang,
+      locale,
       to,
-      target: '_self',
-      autoAddBaseUrl: false,
       onClick,
-      className:
-        // eslint-disable-next-line no-nested-ternary
-        locale === currentLocale
-          ? // Similar idea as DefaultNavbarItem: select the right Infima active
-          // class name. This cannot be substituted with isActive, because the
-          // target URLs contain `pathname://` and therefore are not NavLinks!
-          mobile
-            ? 'menu__link--active'
-            : 'dropdown__link--active'
-          : '',
+      isActive: locale === currentLocale,
     };
   });
 
-  const items = [...dropdownItemsBefore, ...localeItems, ...dropdownItemsAfter];
-
-  // Mobile is handled a bit differently
-  const dropdownLabel = mobile
-    ? translate({
-      message: 'Languages',
-      id: 'theme.navbar.mobileLanguageDropdown.label',
-      description: 'The label for the mobile language switcher dropdown',
-    })
-    : localeConfigs[currentLocale]!.label;
-
   return (
-    <DropdownNavbarItem
-      {...props}
-      mobile={mobile}
-      label={
-        <>
-          <IconLanguage className={styles.iconLanguage} />
-          {dropdownLabel}
-        </>
-      }
-      items={items}
-    />
+    <div className={styles.localeButtons}>
+      {localeItems.map((item, index) => (
+        <React.Fragment key={item.locale}>
+          <Link
+            to={item.to}
+            onClick={item.onClick}
+            className={item.isActive ? styles.activeLocale : styles.inactiveLocale}
+          >
+            {item.locale}
+          </Link>
+          {index < localeItems.length - 1 && (
+            <span className={styles.separator}>|</span>
+          )}
+        </React.Fragment>
+      ))}
+    </div>
   );
 }

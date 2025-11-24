@@ -1,0 +1,15 @@
+.title {
+  display: none;
+}
+
+.logo {
+  object-fit: contain;
+  height: 48px;
+  margin-top: -8px;
+}
+
+@media (max-width: 996px) {
+  .logo {
+    height: 30px;
+  }
+}

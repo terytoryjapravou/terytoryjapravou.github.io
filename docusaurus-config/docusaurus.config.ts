@@ -79,31 +79,31 @@ const config: Config = {
         {
           to: '/about',
           label: 'Пра нас',
-          position: 'left',
+          position: 'right',
         },
         {
           to: '/articles',
           label: 'Артыкулы',
-          position: 'left',
+          position: 'right',
           // Hide for English locale - content not translated
           docsPluginId: 'default',
         },
         {
           to: '/opportunities',
           label: 'Магчымасці',
-          position: 'left',
+          position: 'right',
           // Hide for English locale - content not translated
           docsPluginId: 'default',
         },
         {
           to: '/activity',
           label: 'Дзейнасць',
-          position: 'left',
+          position: 'right',
         },
         {
           to: '/donate',
           label: 'Падтрымаць',
-          position: 'left',
+          position: 'right',
         },
 
         {

@@ -8,7 +8,7 @@ export default function NavbarLogo(): JSX.Element {
   return (
     <Logo
       className="navbar__brand"
-      imageClassName="navbar__logo"
+      imageClassName={clsx('navbar__logo', styles.logo)}
       titleClassName={clsx('navbar__title', 'text--truncate', styles.title)}
     />
   );

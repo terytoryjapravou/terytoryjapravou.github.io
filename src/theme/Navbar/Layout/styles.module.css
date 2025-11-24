@@ -1,0 +1,27 @@
+.navbarHideable {
+  transition: transform var(--ifm-transition-fast) ease;
+}
+
+.navbarHidden {
+  transform: translate3d(0, calc(-100% - 2px), 0);
+}
+
+.navbar {
+  background-color: var(--brand-primary);
+  color: var(--text-inverse);
+  box-shadow: none;
+  border-block-end: 1px solid var(--base-light);
+
+  padding-inline-start: 146px;
+  padding-inline-end: 121px;
+  padding-block: 12px;
+  height: 128px;
+}
+
+@media (max-width: 996px) {
+  .navbar {
+    padding-inline: 16px;
+    padding-block: 6px;
+    height: 56px;
+  }
+}

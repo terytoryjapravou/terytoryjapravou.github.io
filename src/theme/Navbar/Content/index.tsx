@@ -13,6 +13,7 @@ import NavbarSearch from '@theme/Navbar/Search';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import styles from './styles.module.css';
+import clsx from 'clsx';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -64,7 +65,7 @@ function NavbarContentLayout({
 }) {
   return (
     <div className="navbar__inner">
-      <div className="navbar__items">{left}</div>
+      <div className={clsx("navbar__items", styles.navbarLeftItems)}>{left}</div>
       <div className="navbar__items navbar__items--right">{right}</div>
     </div>
   );
@@ -86,7 +87,6 @@ export default function NavbarContent(): JSX.Element {
       left={
         // TODO stop hardcoding items?
         <>
-          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
           <NavbarLogo />
           <NavbarItems items={leftItems} />
         </>
@@ -102,6 +102,7 @@ export default function NavbarContent(): JSX.Element {
               <SearchBar />
             </NavbarSearch>
           )}
+          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
         </>
       }
     />

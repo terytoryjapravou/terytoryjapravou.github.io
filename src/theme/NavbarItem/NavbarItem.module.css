@@ -1,0 +1,18 @@
+.link {
+  color: inherit;
+
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-heading);
+}
+
+.link:hover {
+  color: var(--accent-primary);
+}
+
+
+@media (max-width: 996px) {
+  :global(.navbar__items) .link {
+    display: none;
+  }
+}

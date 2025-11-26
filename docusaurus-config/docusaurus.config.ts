@@ -42,6 +42,16 @@ const config: Config = {
   plugins: [
     ...buildConfigArticlesPlugins(),
     ...buildConfigOpportunitiesPlugins(),
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 90,
+        max: 2880,
+        min: 640,
+        steps: 4,
+        disableInDev: false,
+      },
+    ],
   ],
 
   presets: [

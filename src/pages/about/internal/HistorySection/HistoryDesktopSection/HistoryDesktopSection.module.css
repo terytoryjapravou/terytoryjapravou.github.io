@@ -63,33 +63,35 @@
   position: absolute;
   top: 78px;
   bottom: 48px;
-  left: 591px;
+  left: 647px;
   z-index: 0;
 }
 
 .timeline {
-  position: absolute;
+  position: absolute !important;
   z-index: 0;
   left: 970px;
   top: 336px;
 }
 
 .location {
-  position: absolute;
+  position: absolute !important;
   z-index: 0;
   left: 1058px;
   top: 275px;
 }
 
 .calendar {
-  position: absolute;
+  position: absolute !important;
   z-index: 0;
   left: 1209px;
   top: 101px;
+  height: 69px;
+  width: 63px;
 }
 
 .ptushka {
-  position: absolute;
+  position: absolute !important;
   z-index: 0;
   left: 1592px;
   top: 218px;

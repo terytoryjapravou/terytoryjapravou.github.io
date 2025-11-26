@@ -1,11 +1,12 @@
 import style from "./ArticleCard.module.css"
 import { Tag } from "@site/src/components/Tag/Tag"
 import { BlogPostCardProps } from "../BlogPostCardProps"
+import Image from '@theme/IdealImage';
 
-export const ArticleCard = function ({post}: BlogPostCardProps) {
+export const ArticleCard = function ({ post }: BlogPostCardProps) {
   return (
     <a href={post.permalink} className={style.card}>
-      {post.image && <img className={style.previewImage} src={post.image} alt={post.title} />}
+      {post.image && <Image className={style.previewImage} img={post.image} alt={post.title} />}
 
       {Boolean(post.tags.length) &&
         <div className={style.tagsGroup}>

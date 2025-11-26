@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 
+import IdealImage from '@theme/IdealImage';
 import Image from '@site/src/pages/donate/internal/DonateSection/internal/Stripe/assets/Image.png'
 
 import styles from '@site/src/pages/donate/internal/DonateSection/internal/Stripe/Stripe.module.css'
@@ -15,7 +16,7 @@ export function Stripe({ className }: StripeProps) {
     <a href={STRIPE_LINK} target='_blank' rel="noopener noreferrer" className={clsx(styles.card, className)}>
       <h3 className={styles.title}>Stripe</h3>
       <span className={styles.subtitle}>Fast and secure one-time donations of any amount.</span>
-      <img src={Image} alt="Stripe" className={styles.content} />
+      <IdealImage img={Image} alt="Stripe" className={styles.content} />
       <Tag className={styles.tag}>Support via Stripe</Tag>
     </a>
   )

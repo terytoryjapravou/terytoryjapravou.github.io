@@ -1,4 +1,5 @@
 import styles from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/HistoryDesktopSection.module.css'
+import Image from '@theme/IdealImage';
 import Map from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Map.svg'
 import Timeline from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Timeline.png'
 import Location from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Location.png'
@@ -125,13 +126,13 @@ export const HistoryDesktopSection = () => {
               transition={{ duration: 0.6, delay: index * 0.05 }}
             >
               {milestone.pictureFirst && (
-                <img src={milestone.picture} alt="" className={styles.milestonePicture} />
+                <Image img={milestone.picture} alt="" className={styles.milestonePicture} />
               )}
               <h4 className={styles.milestoneTitle}>
                 {milestone.title}
               </h4>
               {!milestone.pictureFirst && (
-                <img src={milestone.picture} alt="" className={styles.milestonePicture} />
+                <Image img={milestone.picture} alt="" className={styles.milestonePicture} />
               )}
               <p className={styles.milestoneDescription}>
                 {milestone.description.split('\n').map((line, i) => (
@@ -145,10 +146,10 @@ export const HistoryDesktopSection = () => {
           ))}
 
           <Map className={styles.map} />
-          <img src={Timeline} alt="Timeline" className={styles.timeline} />
-          <img src={Location} alt="Location" className={styles.location} />
-          <img src={Calendar} alt="Calendar" className={styles.calendar} />
-          <img src={Ptushka} alt="Bird" className={styles.ptushka} />
+          <Image img={Timeline} alt="Timeline" className={styles.timeline} />
+          <Image img={Location} alt="Location" className={styles.location} />
+          <Image img={Calendar} alt="Calendar" className={styles.calendar} />
+          <Image img={Ptushka} alt="Bird" className={styles.ptushka} />
         </motion.div>
       </div>
     </section>

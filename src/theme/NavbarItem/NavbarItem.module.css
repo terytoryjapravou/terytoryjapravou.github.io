@@ -10,6 +10,11 @@
   color: var(--accent-primary);
 }
 
+/* Active link highlight */
+.link:global(.navbar__link--active) {
+  color: var(--accent-primary);
+}
+
 
 @media (max-width: 996px) {
   :global(.navbar__items) .link {

@@ -60,7 +60,16 @@
     gap: 16px;
   }
 
-  .illustration {
+  .mobileImageWrapper {
+    height: 120px;
+    max-width: 160px;
+  }
+
+  .mobileImageWrapper img {
     max-height: 120px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
   }
 }

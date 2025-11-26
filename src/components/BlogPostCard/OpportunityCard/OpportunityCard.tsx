@@ -2,11 +2,12 @@ import { Tag } from "@site/src/components/Tag/Tag"
 import styles from "./OpportunityCard.module.css"
 import { Button } from "@site/src/components/Button/Button"
 import { BlogPostCardProps } from "../BlogPostCardProps"
+import Image from '@theme/IdealImage';
 
 export function OpportunityCard({ post }: BlogPostCardProps) {
   return (
     <div className={styles.card}>
-      {post.image && <img className={styles.previewImage} src={post.image} alt={post.title} />}
+      {post.image && <Image className={styles.previewImage} img={post.image} alt={post.title} />}
 
       {Boolean(post.tags.length) &&
         <div className={styles.tagsGroup}>

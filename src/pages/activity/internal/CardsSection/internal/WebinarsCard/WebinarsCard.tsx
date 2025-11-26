@@ -1,4 +1,5 @@
 import { Card } from '../Card/Card'
+import Image from '@theme/IdealImage';
 import Grid from './assets/grid.png'
 import TgLogo from './assets/tg.svg'
 
@@ -24,7 +25,7 @@ export function WebinarsCard() {
         </p>
       </div>
 
-      <img src={Grid} alt="" className={styles.image} />
+      <Image img={Grid} alt="" className={styles.image} />
 
       <a href={TG_LINK} target='_blank' rel='noopener noreferrer' className={styles.tg}>
         <span>Падпісацца на наш Telegram, каб атрымліваць анонсы</span>

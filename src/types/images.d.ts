@@ -1,28 +1,38 @@
 // Type declarations for image assets
 
+// When using @docusaurus/plugin-ideal-image
+interface IdealImageModule {
+  default: {
+    src: string;
+    preSrc: string;
+    width: number;
+    height: number;
+  };
+}
+
 declare module '*.png' {
-  const src: string;
-  export default src;
+  const value: IdealImageModule['default'];
+  export default value;
 }
 
 declare module '*.jpg' {
-  const src: string;
-  export default src;
+  const value: IdealImageModule['default'];
+  export default value;
 }
 
 declare module '*.jpeg' {
-  const src: string;
-  export default src;
+  const value: IdealImageModule['default'];
+  export default value;
 }
 
 declare module '*.gif' {
-  const src: string;
-  export default src;
+  const value: IdealImageModule['default'];
+  export default value;
 }
 
 declare module '*.webp' {
-  const src: string;
-  export default src;
+  const value: IdealImageModule['default'];
+  export default value;
 }
 
 declare module '*.avif' {

@@ -1,7 +1,7 @@
 import { Mark } from '@site/src/components/Mark/Mark'
 import Image from '@theme/IdealImage';
-import Dama from './assets/Dama.png'
-import Group from './assets/Group.png'
+import Dama from './assets/illystration_9png.png'
+import Group from './assets/illystration_10.png'
 
 import styles from './HeaderSection.module.css'
 

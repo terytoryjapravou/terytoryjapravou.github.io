@@ -1,6 +1,8 @@
-import { style } from "motion/react-client"
 import styles from "./SloganSection.module.css"
 import { useWindowSize } from "@docusaurus/theme-common"
+import Image from '@theme/IdealImage'
+import illustration from './assets/illystration_13.png'
+
 
 export const SloganSection = () => {
   const windowSize = useWindowSize()
@@ -11,6 +13,9 @@ export const SloganSection = () => {
     <section className={styles.section}>
       <div className={styles.content}>
         <div className={styles.slogan}>Стварайма Беларусь тэрыторыяй правоў</div>
+        <div className={styles.imageWrapper}>
+          <Image img={illustration} alt="" />
+        </div>
       </div>
     </section>
   )

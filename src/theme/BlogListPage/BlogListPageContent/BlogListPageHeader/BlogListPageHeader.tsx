@@ -23,7 +23,7 @@ export function BlogListPageHeader({ metadata }: { metadata: BlogPaginatedMetada
     if (!blogId) return
 
     if (blogId === 'articles') {
-      import('./assets/articles.png').then(module => {
+      import('./assets/illystration_3.png').then(module => {
         setIllustrationUrl(module.default)
       })
 
@@ -31,7 +31,7 @@ export function BlogListPageHeader({ metadata }: { metadata: BlogPaginatedMetada
     }
 
     if (blogId === 'opportunities') {
-      import('./assets/opportunities.png').then(module => {
+      import('./assets/illystration_6.png').then(module => {
         setIllustrationUrl(module.default)
       })
 
@@ -46,13 +46,31 @@ export function BlogListPageHeader({ metadata }: { metadata: BlogPaginatedMetada
         <h1 className={styles.title}>{metadata.blogTitle}</h1>
         <div className={styles.tagsGroupWrapper}>
           <TagsGroup blogId={blogId} />
-          {windowSize === 'mobile' && illustrationUrl && <Image img={illustrationUrl} alt="Illustration" className={styles.illustration} />}
+          {windowSize === 'mobile' && illustrationUrl && (
+            <div className={styles.mobileImageWrapper}>
+              <Image
+                img={illustrationUrl}
+                alt="Illustration"
+              />
+            </div>
+          )}
         </div>
         <div className={styles.descriptionWrapper}>
           <div className={styles.description}>{descriptionParagraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}</div>
-          {windowSize === 'desktop' && illustrationUrl && <Image img={illustrationUrl} alt="Illustration" className={styles.illustration} />}
+          {windowSize === 'desktop' && illustrationUrl && (
+            <Image
+              img={illustrationUrl}
+              alt="Illustration"
+              style={{
+                maxWidth: 400,
+                width: '100%',
+                height: 'auto',
+                objectFit: 'contain'
+              }}
+            />
+          )}
         </div>
       </div>
     </section>

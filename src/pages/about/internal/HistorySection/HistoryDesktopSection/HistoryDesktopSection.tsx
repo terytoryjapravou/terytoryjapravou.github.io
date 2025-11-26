@@ -1,7 +1,7 @@
 import styles from './HistoryDesktopSection.module.css'
 import Image from '@theme/IdealImage';
 import Map from './assets/Map.svg'
-import Timeline from './assets/Timeline.png'
+import Timeline from './assets/Timeline.svg'
 import Location from './assets/Location.png'
 import Calendar from './assets/Calendar.png'
 import Ptushka from './assets/Ptushka.png'
@@ -146,7 +146,7 @@ export const HistoryDesktopSection = () => {
           ))}
 
           <Map className={styles.map} />
-          <Image img={Timeline} alt="Timeline" className={styles.timeline} />
+          <Timeline className={styles.timeline} />
           <Image img={Location} alt="Location" className={styles.location} />
           <Image img={Calendar} alt="Calendar" className={styles.calendar} />
           <Image img={Ptushka} alt="Ptushka" className={styles.ptushka} />

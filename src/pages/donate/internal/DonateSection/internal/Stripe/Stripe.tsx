@@ -1,6 +1,7 @@
 import clsx from 'clsx'
+import Image from '@theme/IdealImage';
 
-import Image from './assets/Image.png'
+import StripeImage from './assets/Image.png'
 
 import styles from './Stripe.module.css'
 import { Tag } from '@site/src/components/Tag/Tag'
@@ -15,7 +16,7 @@ export function Stripe({ className }: StripeProps) {
     <a href={STRIPE_LINK} target='_blank' rel="noopener noreferrer" className={clsx(styles.card, className)}>
       <h3 className={styles.title}>Stripe</h3>
       <span className={styles.subtitle}>Хуткія і бяспечныя разавыя данаты любой сумы.</span>
-      <img src={Image} alt="Stripe" className={styles.content} />
+      <Image img={StripeImage} alt="Stripe" className={styles.content} />
       <Tag className={styles.tag}>Падтрымаць праз Stripe</Tag>
     </a>
   )

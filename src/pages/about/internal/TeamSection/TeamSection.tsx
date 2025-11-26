@@ -1,4 +1,5 @@
 import { useWindowSize } from '@docusaurus/theme-common'
+import Image from '@theme/IdealImage';
 import styles from './TeamSection.module.css'
 
 import TeamImage from './assets/Team.png'
@@ -15,8 +16,8 @@ export function TeamSection() {
           Мы – група людзей з розным досведам, але адной мэтай:
           зрабіць правы чалавека бліжэйшымі і зразумелымі для ўсіх
         </p>
-        {windowSize === 'desktop' && <img className={styles.image} src={TeamImage} alt="Групавое фота каманды праекта Тэрыторыя правоў" />}
-        {windowSize === 'mobile' && <img className={styles.imageMobile} src={TeamMobileImage} alt="Групавое фота каманды праекта Тэрыторыя правоў" />}
+        {windowSize === 'desktop' && <Image className={styles.image} img={TeamImage} alt="Групавое фота каманды праекта Тэрыторыя правоў" />}
+        {windowSize === 'mobile' && <Image className={styles.imageMobile} img={TeamMobileImage} alt="Групавое фота каманды праекта Тэрыторыя правоў" />}
       </div>
     </section>
   )

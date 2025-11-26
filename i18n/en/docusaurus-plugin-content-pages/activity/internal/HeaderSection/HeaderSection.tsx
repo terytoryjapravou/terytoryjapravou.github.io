@@ -1,4 +1,5 @@
 import { Mark } from '@site/src/components/Mark/Mark'
+import Image from '@theme/IdealImage';
 import Dama from '@site/src/pages/activity/internal/HeaderSection/assets/Dama.png'
 import Group from '@site/src/pages/activity/internal/HeaderSection/assets/Group.png'
 
@@ -14,8 +15,8 @@ export function HeaderSection() {
         <p className={styles.description}>
           <Mark variant='underline'>Our offerings</Mark> that can help you get closer to understanding human rights.
         </p>
-        <img src={Dama} alt="" className={styles.pic1} />
-        <img src={Group} alt="" className={styles.pic2} />
+        <Image img={Dama} alt="" className={styles.pic1} />
+        <Image img={Group} alt="" className={styles.pic2} />
       </div>
     </header>
   )

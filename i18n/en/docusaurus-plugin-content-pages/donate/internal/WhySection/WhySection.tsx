@@ -1,4 +1,5 @@
 import { Mark } from '@site/src/components/Mark/Mark'
+import Image from '@theme/IdealImage';
 import DonateBig from '@site/src/pages/donate/internal/WhySection/assets/DonateBig.png'
 
 import styles from '@site/src/pages/donate/internal/WhySection/WhySection.module.css'
@@ -8,7 +9,7 @@ export function WhySection() {
     <section>
       <div className={styles.wrapper}>
         <h2 className={styles.title}>Why your donation matters</h2>
-        <img src={DonateBig} alt="" className={styles.image} />
+        <Image img={DonateBig} alt="" className={styles.image} />
         <p className={styles.content}>
           Every educational program and material we create is the work of people who want to <Mark variant="underline">help</Mark> others <Mark variant='rounded'>know</Mark> and understand <Mark variant="underline">their rights</Mark>,
           learn to protect themselves and others.

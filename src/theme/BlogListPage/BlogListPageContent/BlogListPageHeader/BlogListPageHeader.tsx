@@ -1,6 +1,7 @@
 import { TagsGroup } from '@site/src/components/TagsGroup/TagsGroup'
 import type { BlogPaginatedMetadata } from '@docusaurus/plugin-content-blog'
 import { useEffect, useState } from 'react';
+import Image from '@theme/IdealImage';
 
 import styles from './BlogListPageHeader.module.css'
 import { useWindowSize } from '@docusaurus/theme-common';
@@ -45,13 +46,13 @@ export function BlogListPageHeader({ metadata }: { metadata: BlogPaginatedMetada
         <h1 className={styles.title}>{metadata.blogTitle}</h1>
         <div className={styles.tagsGroupWrapper}>
           <TagsGroup blogId={blogId} />
-          {windowSize === 'mobile' && illustrationUrl && <img src={illustrationUrl} alt="Illustration" className={styles.illustration} />}
+          {windowSize === 'mobile' && illustrationUrl && <Image img={illustrationUrl} alt="Illustration" className={styles.illustration} />}
         </div>
         <div className={styles.descriptionWrapper}>
           <div className={styles.description}>{descriptionParagraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}</div>
-          {windowSize === 'desktop' && illustrationUrl && <img src={illustrationUrl} alt="Illustration" className={styles.illustration} />}
+          {windowSize === 'desktop' && illustrationUrl && <Image img={illustrationUrl} alt="Illustration" className={styles.illustration} />}
         </div>
       </div>
     </section>

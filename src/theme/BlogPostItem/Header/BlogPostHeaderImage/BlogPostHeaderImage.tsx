@@ -1,4 +1,5 @@
 import { useBlogPost } from '@docusaurus/plugin-content-blog/client'
+import Image from '@theme/IdealImage';
 
 import styles from './BlogPostHeaderImage.module.css'
 
@@ -11,5 +12,5 @@ export function BlogPostHeaderImage() {
     return null
   }
 
-  return <img className={styles.image} src={image} alt={description} />
+  return <Image className={styles.image} img={image} alt={description} />
 }

@@ -15,6 +15,11 @@
   color: var(--accent-primary);
 }
 
+/* Active button highlight */
+.activeButton {
+  color: var(--accent-primary) !important;
+}
+
 
 @media (max-width: 996px) {
   :global(.navbar__items) .link {

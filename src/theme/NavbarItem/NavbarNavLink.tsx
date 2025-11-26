@@ -55,10 +55,13 @@ export default function NavbarNavLink({
   }
 
   if (toUrl?.endsWith('donate')) {
+    // Check if the current page is the donate page
+    const isActive = typeof window !== 'undefined' && window.location.pathname.endsWith('/donate');
+
     return (
       <Button
         href={toUrl}
-        className={clsx(props.className, styles.link)}>
+        className={clsx(props.className, styles.link, isActive && styles.activeButton)}>
         {label}
       </Button>
     )

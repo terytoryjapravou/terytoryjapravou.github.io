@@ -53,7 +53,7 @@
 .secondary:hover,
 .secondary:focus-visible,
 .secondary:active {
-  color: var(--text-tag);
+  color: var(--accent-primary);
 }
 
 .secondary:disabled {

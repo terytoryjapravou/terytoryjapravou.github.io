@@ -40,7 +40,9 @@ export default function LocaleDropdownNavbarItem({
       }
     }
 
-    const to = `${targetUrl}${search}${hash}${queryString}`;
+    const baseTo = `pathname://${targetUrl}`;
+    // preserve ?search#hash suffix on locale switches
+    const to = `${baseTo}${search}${hash}${queryString}`;
 
     // Save locale preference to localStorage when clicked
     const onClick = () => {
@@ -65,6 +67,8 @@ export default function LocaleDropdownNavbarItem({
             to={item.to}
             onClick={item.onClick}
             className={item.isActive ? styles.activeLocale : styles.inactiveLocale}
+            target="_self"
+            autoAddBaseUrl={false}
           >
             {item.locale}
           </Link>

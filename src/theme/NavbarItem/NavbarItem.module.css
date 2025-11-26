@@ -15,9 +15,23 @@
   color: var(--accent-primary);
 }
 
-/* Active button highlight */
-.activeButton {
-  color: var(--accent-primary) !important;
+/* Donate button styles */
+.donateButton {
+  padding-inline: 16px;
+  padding-block: 6px;
+  border-radius: 5px;
+  border: 1px solid currentColor;
+  transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.donateButton:global(.navbar__link--active) {
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
+.donateButton:hover {
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
 }
 
 

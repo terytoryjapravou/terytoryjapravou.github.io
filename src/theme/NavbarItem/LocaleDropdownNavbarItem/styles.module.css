@@ -18,7 +18,7 @@
 }
 
 .activeLocale {
-  font-weight: bold;
+  font-weight: var(--font-weight-semibold);
   color: var(--accent-primary);
   text-decoration: none;
 }

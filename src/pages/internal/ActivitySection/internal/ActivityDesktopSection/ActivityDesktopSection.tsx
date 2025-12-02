@@ -1,8 +1,8 @@
 import styles from './ActivityDesktopSection.module.css'
 import { EducationCard } from './internal/EducationCard/EducationCard'
 import { ActivityCardsGroup } from './internal/ActivityCardsGroup/ActivityCardsGroup'
-import { TPCourseCard } from './internal/TPCourseCard'
-import { WebinarsCard } from './internal/WebinarsCard'
+import { TPCourseCard } from './internal/TPCourseCard/TPCourseCard'
+import { WebinarsCard } from './internal/WebinarsCard/WebinarsCard'
 import { SectionHeader } from '@site/src/components/SectionHeader/SectionHeader'
 
 export const ActivityDesktopSection = () => {

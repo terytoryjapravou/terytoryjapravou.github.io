@@ -1,0 +1,54 @@
+.preview {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.preview:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+
+  width: 309px;
+
+  background-color: var(--accent-primary);
+  transform: rotate(6.7deg);
+}
+
+.lamp {
+  position: absolute;
+
+  top: 34px;
+  right: 89.53px;
+
+  width: 147.47px;
+  height: 145.94px;
+}
+
+.caption {
+  position: absolute;
+
+  right: 42px;
+  bottom: 27px;
+
+  width: 199px;
+
+  color: var(--brand-primary);
+
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-heading);
+}
+
+.image {
+  position: absolute;
+
+  top: 58px;
+  right: 330px;
+
+  width: 307px;
+  object-fit: contain;
+}

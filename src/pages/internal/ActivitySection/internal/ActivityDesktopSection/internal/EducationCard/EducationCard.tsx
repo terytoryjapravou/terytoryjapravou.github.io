@@ -6,6 +6,7 @@ export const EducationCard = () => {
     <ActivityCard
       title="Асвета"
       content={<EducationCardContent />}
+      fullWidth
     />
   )
 }

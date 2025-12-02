@@ -32,7 +32,15 @@
 }
 
 .content {
+  font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-h3);
+  line-height: var(--line-height-heading);
+
+  max-width: 352px;
+}
+
+.contentFullWidth {
+  max-width: none;
 }
 
 .preview {

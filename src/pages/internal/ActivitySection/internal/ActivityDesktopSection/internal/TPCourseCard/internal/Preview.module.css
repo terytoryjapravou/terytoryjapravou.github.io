@@ -1,0 +1,43 @@
+.preview {
+  position: absolute;
+  top: -53px;
+  right: -142px;
+
+  border-radius: 9999px;
+  background-color: var(--brand-primary);
+
+  width: 507px;
+  height: 507px;
+}
+
+.image {
+  transform: rotateZ(-7deg) rotateY(180deg) translateX(115px) translateY(17px);
+  object-fit: contain;
+
+  left: 10px;
+  width: 414px;
+}
+
+.square {
+  position: absolute;
+  right: 510px;
+  top: 206px;
+
+  width: 9px;
+  height: 9px;
+
+  transform: rotate(45deg);
+  background-color: var(--accent-primary);
+}
+
+.square2 {
+  position: absolute;
+  right: 337px;
+  top: 289px;
+
+  width: 16px;
+  height: 16px;
+
+  transform: rotate(21deg);
+  background-color: var(--accent-primary);
+}

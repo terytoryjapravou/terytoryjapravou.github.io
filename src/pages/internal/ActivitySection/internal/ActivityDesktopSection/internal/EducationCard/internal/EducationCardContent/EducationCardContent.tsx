@@ -26,15 +26,15 @@ export const EducationCardContent = () => {
         <TgLogo />
         <div className={styles.cardContent}>
           <div className={styles.textContent}>
-            <b>Telegram</b><br/>
+            <b>Telegram</b><br />
             магчымасці для тых, хто хоча вучыцца, развівацца і дзейнічаць:
-
-            <ul className={styles.listContent}>
-              <li className={styles.listItem}>курсы</li>
-              <li className={styles.listItem}>стажыроўкі</li>
-              <li className={styles.listItem}>падтрымка</li>
-            </ul>
           </div>
+
+          <ul className={styles.listContent}>
+            <li className={styles.listItem}>курсы</li>
+            <li className={styles.listItem}>стажыроўкі</li>
+            <li className={styles.listItem}>падтрымка</li>
+          </ul>
         </div>
       </div>
 
@@ -42,9 +42,14 @@ export const EducationCardContent = () => {
         <FbLogo />
         <div className={styles.cardContent}>
           <div className={styles.textContent}>
-            <b>У Facebook</b> — простай мовай пра складанае:
-            матэрыялы пра правы чалавека, тлумачэнні, падборкі
+            <b>У Facebook</b> — паглыбляем вашыя веды пра правы чалавека:
           </div>
+
+          <ul className={styles.listContent}>
+            <li className={styles.listItem}>артыкулы</li>
+            <li className={styles.listItem}>адукацыйныя матэрыялы</li>
+            <li className={styles.listItem}>карысныя падборкі</li>
+          </ul>
         </div>
       </div>
     </div>

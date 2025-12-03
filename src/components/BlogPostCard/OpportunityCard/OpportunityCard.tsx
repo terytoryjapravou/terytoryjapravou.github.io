@@ -19,10 +19,9 @@ export function OpportunityCard({ post }: BlogPostCardProps) {
 
       <div className={styles.content}>
         <div className={styles.title}>{post.title}</div>
-        <div className={styles.description}>{post.description}</div>
       </div>
 
-      <Button href={post.permalink}>
+      <Button href={post.permalink} className={styles.button}>
         Запісацца
       </Button>
     </div>

@@ -20,3 +20,22 @@
   font-size: var(--font-size-lead);
   line-height: var(--line-height-body);
 }
+
+@media (max-width: 996px) {
+  .wrapper {
+    flex-direction: row;
+    position: static;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 40px;
+    width: 122px;
+  }
+
+  .position {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+  }
+}

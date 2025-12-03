@@ -34,5 +34,13 @@ export function buildConfigOpportunitiesPlugins(): PluginConfig[] {
         limit: 3,
       },
     ],
+    [
+      '../plugins/blogTagsJsonGeneratorPlugin',
+      {
+        id: `${blogId}-tags-json`,
+        blogPluginId: blogId,
+        outputPath: 'static/data',
+      },
+    ],
   ]
 }

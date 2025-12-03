@@ -1,6 +1,6 @@
 import { Mark } from '@site/src/components/Mark/Mark'
 import Image from '@theme/IdealImage';
-import DonateBig from '@site/src/pages/donate/internal/WhySection/assets/DonateBig.png'
+import DonateBig from '@site/src/pages/donate/internal/WhySection/assets/illystration_7.png'
 
 import styles from '@site/src/pages/donate/internal/WhySection/WhySection.module.css'
 

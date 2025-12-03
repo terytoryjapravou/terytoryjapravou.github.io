@@ -1,7 +1,7 @@
 import styles from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/HistoryDesktopSection.module.css'
 import Image from '@theme/IdealImage';
 import Map from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Map.svg'
-import Timeline from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Timeline.png'
+import Timeline from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Timeline.svg'
 import Location from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Location.png'
 import Calendar from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Calendar.png'
 import Ptushka from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Ptushka.png'
@@ -146,10 +146,10 @@ export const HistoryDesktopSection = () => {
           ))}
 
           <Map className={styles.map} />
-          <Image img={Timeline} alt="Timeline" className={styles.timeline} />
+          <Timeline className={styles.timeline} />
           <Image img={Location} alt="Location" className={styles.location} />
           <Image img={Calendar} alt="Calendar" className={styles.calendar} />
-          <Image img={Ptushka} alt="Bird" className={styles.ptushka} />
+          <Image img={Ptushka} alt="Ptushka" className={styles.ptushka} />
         </motion.div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import { Mark } from '@site/src/components/Mark/Mark'
-import Image from '@theme/IdealImage';
-import DonatImage from './assets/Donat.png'
+import Image from '@theme/IdealImage'
+import DonatImage from './assets/illystration_7.png'
 import styles from './SupportSection.module.css'
 
 export function SupportSection() {

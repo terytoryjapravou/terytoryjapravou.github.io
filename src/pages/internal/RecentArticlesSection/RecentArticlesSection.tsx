@@ -19,7 +19,7 @@ export const RecentArticlesSection = () => {
     <section>
       <div className={styles.articles}>
         <SectionHeader
-          title="Артыкулы"
+          title={<a href="/articles">Артыкулы</a>}
           subtitle="Чытаць больш"
           href="/articles"
         />

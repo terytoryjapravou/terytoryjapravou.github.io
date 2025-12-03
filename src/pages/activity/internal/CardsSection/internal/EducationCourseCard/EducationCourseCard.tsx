@@ -1,6 +1,6 @@
 import { Card } from "../Card/Card"
 import Image from '@theme/IdealImage';
-import GridImg from './assets/Grid.png'
+import CourseImage from './assets/Kurs.png'
 
 import styles from './EducationCourseCard.module.css'
 
@@ -11,7 +11,7 @@ export function EducationCourseCard() {
         Адукацыйны курс «Тэрыторыя правоў»
       </h3>
 
-      <Image img={GridImg} alt="" className={styles.image} />
+      <Image img={CourseImage} alt="" className={styles.image} />
 
       <p className={styles.description}>
         Наш флагманскі курс створаны для тых, хто хоча пачаць з пачатку і разабрацца,

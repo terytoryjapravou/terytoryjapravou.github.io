@@ -18,7 +18,7 @@ export function RecentOpportunitiesSection() {
     <section className={styles.section}>
       <div className={styles.opportunities}>
         <SectionHeader
-          title="Магчымасці"
+          title={<a href="/opportunities">Магчымасці</a>}
           subtitle="Чытаць больш"
           href="/opportunities"
         />

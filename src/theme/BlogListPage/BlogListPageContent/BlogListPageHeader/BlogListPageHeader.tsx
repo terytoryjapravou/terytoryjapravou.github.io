@@ -1,15 +1,13 @@
 import { TagsGroup } from '@site/src/components/TagsGroup/TagsGroup'
 import type { BlogPaginatedMetadata } from '@docusaurus/plugin-content-blog'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Image from '@theme/IdealImage';
 
 import styles from './BlogListPageHeader.module.css'
 import { useWindowSize } from '@docusaurus/theme-common';
 
 export function BlogListPageHeader({ metadata }: { metadata: BlogPaginatedMetadata }) {
-  const [illustrationUrl, setIllustrationUrl] = useState<string | null>(null)
   const windowSize = useWindowSize()
-
 
   // should be same as blog root path
   const blogId = metadata.permalink.split('/')[1]
@@ -19,26 +17,10 @@ export function BlogListPageHeader({ metadata }: { metadata: BlogPaginatedMetada
     .map(paragraph => paragraph.trim())
     .filter(paragraph => paragraph.length > 0)
 
-  useEffect(() => {
-    if (!blogId) return
-
-    if (blogId === 'articles') {
-      import('./assets/illystration_3.png').then(module => {
-        setIllustrationUrl(module.default)
-      })
-
-      return
-    }
-
-    if (blogId === 'opportunities') {
-      import('./assets/illystration_6.png').then(module => {
-        setIllustrationUrl(module.default)
-      })
-
-      return
-    }
-
-  }, [blogId, setIllustrationUrl])
+  const asset =
+    blogId === 'articles' ? require('./assets/illystration_3.png') :
+      blogId === 'opportunities' ? require('./assets/illystration_6.png') :
+        null
 
   return (
     <section className={styles.section}>
@@ -46,10 +28,11 @@ export function BlogListPageHeader({ metadata }: { metadata: BlogPaginatedMetada
         <h1 className={styles.title}>{metadata.blogTitle}</h1>
         <div className={styles.tagsGroupWrapper}>
           <TagsGroup blogId={blogId} />
-          {windowSize === 'mobile' && illustrationUrl && (
+          {windowSize === 'mobile' && asset && (
             <div className={styles.mobileImageWrapper}>
               <Image
-                img={illustrationUrl}
+                img={asset}
+                className={styles.imageWrapper}
                 alt="Illustration"
               />
             </div>
@@ -59,15 +42,15 @@ export function BlogListPageHeader({ metadata }: { metadata: BlogPaginatedMetada
           <div className={styles.description}>{descriptionParagraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}</div>
-          {windowSize === 'desktop' && illustrationUrl && (
+          {windowSize === 'desktop' && asset && (
             <Image
-              img={illustrationUrl}
+              img={asset}
               alt="Illustration"
+              className={styles.imageWrapper}
               style={{
                 maxWidth: 400,
+                maxHeight: 400,
                 width: '100%',
-                height: 'auto',
-                objectFit: 'contain'
               }}
             />
           )}

@@ -25,7 +25,13 @@
   padding-block: 184px;
   position: relative;
 
-
+  transform: scale(
+    clamp(
+      .5,
+      calc( 100vw / 1440px ),
+      1
+    )
+  );
 }
 
 .image {

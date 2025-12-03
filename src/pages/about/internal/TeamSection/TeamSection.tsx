@@ -1,9 +1,10 @@
 import { useWindowSize } from '@docusaurus/theme-common'
-import Image from '@theme/IdealImage';
+import Image from '@theme/IdealImage'
+import Team from './assets/illystration_4.png'
 import styles from './TeamSection.module.css'
+import { Badge } from './internal/Badge/Badge'
+import Pointers from './assets/pointers.png'
 
-import TeamImage from './assets/Team.png'
-import TeamMobileImage from './assets/TeamMobile.png'
 
 export function TeamSection() {
   const windowSize = useWindowSize()
@@ -16,9 +17,26 @@ export function TeamSection() {
           Мы – група людзей з розным досведам, але адной мэтай:
           зрабіць правы чалавека бліжэйшымі і зразумелымі для ўсіх
         </p>
-        {windowSize === 'desktop' && <Image className={styles.image} img={TeamImage} alt="Групавое фота каманды праекта Тэрыторыя правоў" />}
-        {windowSize === 'mobile' && <Image className={styles.imageMobile} img={TeamMobileImage} alt="Групавое фота каманды праекта Тэрыторыя правоў" />}
+
+        <div className={styles.imageWrapper}>
+          <Image img={Team} className={styles.image} />
+
+          {windowSize === 'desktop' && (
+            <>
+              <Badge name="Вераніка" position="праектная менеджарка" className={styles.badge1} />
+              <Badge name="Захар" position="тэхнічны менеджар" className={styles.badge2} />
+              <Badge name='Каця' position='камунікацыйная менеджарка' className={styles.badge3} />
+              <Badge name='Насця' position='дызайнерка' className={styles.badge4} />
+              <Badge name='Пятровіч' position='каардынатар арганізацыі' className={styles.badge5} />
+              <Badge name='Юля' position='SMM-менеджарка' className={styles.badge6} />
+              <Image img={Pointers} className={styles.pointers} />
+            </>
+          )}
+        </div>
+
       </div>
     </section>
   )
 }
+
+

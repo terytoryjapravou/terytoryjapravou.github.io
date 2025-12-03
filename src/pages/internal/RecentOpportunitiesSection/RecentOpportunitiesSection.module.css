@@ -13,7 +13,8 @@
 .content {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 12px;
+  justify-content: space-between;
 
   overflow-x: auto;
 }

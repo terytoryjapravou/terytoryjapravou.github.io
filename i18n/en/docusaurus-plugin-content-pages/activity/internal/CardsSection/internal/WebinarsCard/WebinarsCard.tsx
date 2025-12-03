@@ -1,6 +1,6 @@
 import { Card } from '@site/src/pages/activity/internal/CardsSection/internal/Card/Card'
 import Image from '@theme/IdealImage';
-import Grid from '@site/src/pages/activity/internal/CardsSection/internal/WebinarsCard/assets/grid.png'
+import Grid from '@site/src/pages/activity/internal/CardsSection/internal/WebinarsCard/assets/Vebinar.png'
 import TgLogo from '@site/src/pages/activity/internal/CardsSection/internal/WebinarsCard/assets/tg.svg'
 
 import { TG_LINK } from '@site/src/constants/socialLinks'

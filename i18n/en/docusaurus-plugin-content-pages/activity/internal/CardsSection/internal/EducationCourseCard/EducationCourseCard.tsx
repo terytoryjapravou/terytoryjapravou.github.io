@@ -1,6 +1,6 @@
 import { Card } from "@site/src/pages/activity/internal/CardsSection/internal/Card/Card"
 import Image from '@theme/IdealImage';
-import GridImg from '@site/src/pages/activity/internal/CardsSection/internal/EducationCourseCard/assets/Grid.png'
+import GridImg from '@site/src/pages/activity/internal/CardsSection/internal/EducationCourseCard/assets/Kurs.png'
 
 import styles from '@site/src/pages/activity/internal/CardsSection/internal/EducationCourseCard/EducationCourseCard.module.css'
 

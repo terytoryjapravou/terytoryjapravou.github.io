@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Onest:wght@100..900&display=swap');
 
 @font-face {
   font-family: 'By_terytoryja_pravou';
@@ -11,8 +11,7 @@
 :root {
   /* Typography */
   --font-primary: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-handwritten: 'By_terytoryja_pravou', cursive;
-  /* --font-handwritten: 'Biro Script Plus', cursive; */
+  --font-handwritten: 'By_terytoryja_pravou', 'Homemade Apple', cursive;
 
   /* Screen */
   --screen-lg: 1440px;

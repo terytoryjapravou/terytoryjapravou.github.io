@@ -10,7 +10,7 @@
 
 .stickyContainer {
   position: sticky;
-  top: 0;
+  top: 50px;
   height: 100vh;
   overflow: hidden;
   display: flex;

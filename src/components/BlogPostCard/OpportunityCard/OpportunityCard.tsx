@@ -6,7 +6,7 @@ import Image from '@theme/IdealImage';
 
 export function OpportunityCard({ post }: BlogPostCardProps) {
   return (
-    <div className={styles.card}>
+    <a href={post.permalink} className={styles.card}>
       {post.image && <Image className={styles.previewImage} img={post.image} alt={post.title} />}
 
       {Boolean(post.tags.length) &&
@@ -24,6 +24,6 @@ export function OpportunityCard({ post }: BlogPostCardProps) {
       <Button href={post.permalink} className={styles.button}>
         Запісацца
       </Button>
-    </div>
+    </a>
   )
 }

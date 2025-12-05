@@ -23,10 +23,12 @@ export function RecentOpportunitiesSection() {
           href="/opportunities"
         />
 
-        <div className={styles.content}>
-          {posts.slice(0, articlesCount).map((post) =>
-            <OpportunityCard key={post.id} post={post} />
-          )}
+        <div className={styles.contentWrapper}>
+          <div className={styles.content}>
+            {posts.slice(0, articlesCount).map((post) =>
+              <OpportunityCard key={post.id} post={post} />
+            )}
+          </div>
         </div>
       </div>
     </section>

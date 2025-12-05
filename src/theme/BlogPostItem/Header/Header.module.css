@@ -6,6 +6,7 @@
 
   padding: 32px;
   gap: 24px;
+  border-radius: 5px;
 }
 
 .headerContentWrapper {
@@ -21,5 +22,7 @@
   .header {
     flex-wrap: wrap;
     justify-content: stretch;
+
+    flex-direction: column;
   }
 }

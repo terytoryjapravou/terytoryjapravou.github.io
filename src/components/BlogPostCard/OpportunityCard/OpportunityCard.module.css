@@ -11,6 +11,14 @@
   gap: 16px;
 
   overflow: hidden;
+
+    transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  transform: translateZ(0) scale(1.02);
+  text-decoration: none;
 }
 
 .previewImage {
@@ -27,6 +35,9 @@
 
 .button {
   margin-top: auto;
+  pointer-events: none;
+  color: currentColor;
+  border-color: currentColor;
 }
 
 @media (max-width: 996px) {

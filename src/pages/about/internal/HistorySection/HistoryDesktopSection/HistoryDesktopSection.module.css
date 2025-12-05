@@ -238,13 +238,16 @@
 
 @media (max-width: 996px) {
   .scrollContent {
-    padding-top: 82px;
+    padding-top: 136px;
     padding-inline: 16px;
     min-width: 3750px;
   }
 
   .descriptionWrapper {
-    max-width: calc(100vw - 32px);
+    max-width: min(
+      calc(100vw - 32px),
+      451px
+    );
   }
 
   .map {

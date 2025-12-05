@@ -1,9 +1,13 @@
 .footer {
   padding-bottom: 48px;
+
+  max-width: var(--screen-md);
+  margin-inline: auto;
 }
 
 @media (max-width: 996px) {
   .footer {
     padding-bottom: 32px;
+    padding-inline: 16px;
   }
 }

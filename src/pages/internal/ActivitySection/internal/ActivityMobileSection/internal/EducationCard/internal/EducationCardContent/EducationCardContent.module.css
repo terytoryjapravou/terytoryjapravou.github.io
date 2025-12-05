@@ -9,6 +9,10 @@
   color: var(--text-primary);
 }
 
+.logo {
+  width: 48px;
+}
+
 .card {
   display: flex;
   flex-direction: row;

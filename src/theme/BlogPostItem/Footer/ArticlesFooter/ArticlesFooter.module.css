@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  max-width: var(--screen-md);
+  margin-inline: auto;
 }
 
 .title {
@@ -29,4 +32,10 @@
 .link:focus {
   color: var(--text-tag);
   text-decoration: none;
+}
+
+@media (max-width: 996px) {
+  .footer {
+    padding-inline: 16px;
+  }
 }

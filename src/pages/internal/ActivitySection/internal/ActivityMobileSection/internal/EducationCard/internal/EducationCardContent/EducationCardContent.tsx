@@ -7,7 +7,7 @@ export const EducationCardContent = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.card}>
-        <IgLogo />
+        <IgLogo className={styles.logo} />
         <div className={styles.cardContent}>
           <div className={styles.textContent}>
             <b>У нашым Instagram</b> —
@@ -23,7 +23,7 @@ export const EducationCardContent = () => {
       </div>
 
       <div className={styles.card}>
-        <TgLogo />
+        <TgLogo className={styles.logo} />
         <div className={styles.cardContent}>
           <div className={styles.textContent}>
             <b>Telegram</b><br />
@@ -39,7 +39,7 @@ export const EducationCardContent = () => {
       </div>
 
       <div className={styles.card}>
-        <FbLogo />
+        <FbLogo className={styles.logo} />
         <div className={styles.cardContent}>
           <div className={styles.textContent}>
             <b>У Facebook</b> — паглыбляем вашыя веды пра правы чалавека:

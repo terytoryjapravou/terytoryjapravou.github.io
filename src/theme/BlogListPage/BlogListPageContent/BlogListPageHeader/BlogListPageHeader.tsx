@@ -1,6 +1,5 @@
 import { TagsGroup } from '@site/src/components/TagsGroup/TagsGroup'
 import type { BlogPaginatedMetadata } from '@docusaurus/plugin-content-blog'
-import { useState } from 'react';
 import Image from '@theme/IdealImage';
 
 import styles from './BlogListPageHeader.module.css'

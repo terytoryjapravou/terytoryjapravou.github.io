@@ -1,12 +1,18 @@
 .header {
   background-color: var(--surface-beige);
 
+
+}
+
+.headerContent {
   display: flex;
   flex-direction: row;
 
   padding: 32px;
   gap: 24px;
-  border-radius: 5px;
+
+  max-width: var(--screen-md);
+  margin-inline: auto;
 }
 
 .headerContentWrapper {
@@ -16,10 +22,11 @@
   flex-basis: 0;
   gap: 16px;
 
+
 }
 
 @media (max-width: 996px) {
-  .header {
+  .headerContent {
     flex-wrap: wrap;
     justify-content: stretch;
 

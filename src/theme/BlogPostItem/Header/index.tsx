@@ -9,12 +9,15 @@ import { BlogPostItemHeaderTags } from './BlogPostItemHeaderTags/BlogPostItemHea
 export default function BlogPostItemHeader(): JSX.Element {
   return (
     <header className={styles.header}>
-      <div className={styles.headerContentWrapper}>
-        <BlogPostItemHeaderTitle />
-        <BlogPostItemHeaderInfo />
-        <BlogPostItemHeaderTags />
+      <div className={styles.headerContent}>
+
+        <div className={styles.headerContentWrapper}>
+          <BlogPostItemHeaderTitle />
+          <BlogPostItemHeaderInfo />
+          <BlogPostItemHeaderTags />
+        </div>
+        <BlogPostHeaderImage />
       </div>
-      <BlogPostHeaderImage />
     </header>
   )
 }

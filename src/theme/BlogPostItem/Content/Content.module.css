@@ -1,13 +1,15 @@
 .content {
   padding-top: 48px;
   padding-bottom: 16px;
-  padding-inline: 204px;
+
+  max-width: 792px;
+  margin-inline: auto;
 }
 
 @media (max-width: 996px) {
   .content {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-inline: 0;
+    padding-inline: 16px;
   }
 }

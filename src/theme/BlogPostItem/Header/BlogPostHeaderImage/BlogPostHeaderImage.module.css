@@ -2,9 +2,6 @@
   object-fit: cover;
   margin-left: auto;
 
-  flex-grow: 1;
-  flex-basis: 0;
-
   border-radius: 5px;
   overflow: hidden;
 
@@ -16,8 +13,7 @@
     margin-inline: auto;
     max-height: none;
     object-fit: contain;
-
-    height: 416px;
-    overflow: visible;
+    height: auto;
+    max-height: 416px;
   }
 }

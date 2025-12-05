@@ -27,7 +27,7 @@
   flex-basis: 0;
   gap: 16px;
 
-
+  max-width: 658px;
 }
 
 @media (max-width: 996px) {

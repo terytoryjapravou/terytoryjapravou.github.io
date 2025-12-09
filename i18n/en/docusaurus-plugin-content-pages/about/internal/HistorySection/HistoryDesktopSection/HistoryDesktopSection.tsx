@@ -57,7 +57,7 @@ const milestones = [
   {
     key: 'm6',
     picture: Laptop,
-    title: 'November 20, 2025',
+    title: 'December 10, 2025',
     description: 'launched the website\nterytoryja-pravou.org',
     pictureFirst: false
   },

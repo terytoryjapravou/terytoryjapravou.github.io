@@ -10,6 +10,7 @@ export const ActivityDesktopSection = () => {
     <section className={styles.section}>
       <div className={styles.contentWrapper}>
         <SectionHeader title={<a href="/activity">Наша дзейнасць</a>} />
+        <TPCourseCard />
 
         <ActivityCardsGroup className={styles.cardsGroup}>
           <TPCourseCard />

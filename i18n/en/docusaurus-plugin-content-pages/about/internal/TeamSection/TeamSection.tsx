@@ -23,9 +23,9 @@ export function TeamSection() {
           <Badge name='Piatrovich' position='organization coordinator' className={styles.badge5} />
           <Badge name="Veranika" position="project manager" className={styles.badge1} />
           <Badge name='Yulia' position='SMM manager' className={styles.badge6} />
-          <Badge name='Katsia' position='communications manager' className={styles.badge3} />
+          <Badge name='Katia' position='communications manager' className={styles.badge3} />
           <Badge name="Zakhar" position="technical manager" className={styles.badge2} />
-          <Badge name='Nastsia' position='designer' className={styles.badge4} />
+          <Badge name='Nastia' position='designer' className={styles.badge4} />
 
           <div className={styles.image}>
             <Image img={Team} />

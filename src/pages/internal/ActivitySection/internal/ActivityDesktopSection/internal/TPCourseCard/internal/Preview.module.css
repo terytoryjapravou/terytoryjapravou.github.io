@@ -11,7 +11,7 @@
 }
 
 .image {
-  transform: rotateZ(-7deg) rotateY(180deg) translateX(115px) translateY(17px);
+  transform: rotateZ(-4deg) translateX(-94px) translateY(79px);
   object-fit: contain;
 
   left: 10px;

@@ -18,14 +18,6 @@ const config: Config = {
         href: '/img/favicon.png',
       },
     },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'icon',
-        href: '/img/favicon.ico',
-        type: 'image/x-icon',
-      },
-    },
   ],
 
 

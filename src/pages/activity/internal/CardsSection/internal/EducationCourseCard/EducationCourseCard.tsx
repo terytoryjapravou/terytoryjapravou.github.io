@@ -11,7 +11,9 @@ export function EducationCourseCard() {
         Адукацыйны курс «Тэрыторыя правоў»
       </h3>
 
-      <Image img={CourseImage} alt="" className={styles.image} />
+      <div className={styles.image}>
+        <Image img={CourseImage} />
+      </div>
 
       <p className={styles.description}>
         Наш флагманскі курс створаны для тых, хто хоча пачаць з пачатку і разабрацца,

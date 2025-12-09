@@ -14,7 +14,7 @@ export const SloganSection = () => {
       <div className={styles.content}>
         <div className={styles.slogan}>Стварайма Беларусь тэрыторыяй правоў</div>
         <div className={styles.imageWrapper}>
-          <Image img={illustration} alt="" />
+          <Image img={illustration} />
         </div>
       </div>
     </section>

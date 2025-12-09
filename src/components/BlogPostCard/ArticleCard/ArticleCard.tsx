@@ -6,7 +6,11 @@ import Image from '@theme/IdealImage';
 export const ArticleCard = function ({ post }: BlogPostCardProps) {
   return (
     <a href={post.permalink} className={style.card}>
-      {post.image && <Image className={style.previewImage} img={post.image} alt={post.title} />}
+      {post.image &&
+        <div className={style.previewImage}>
+          <Image img={post.image} alt={post.title} />
+        </div>
+      }
 
       {Boolean(post.tags.length) &&
         <div className={style.tagsGroup}>

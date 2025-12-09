@@ -29,11 +29,12 @@ export function BlogListPageHeader({ metadata }: { metadata: BlogPaginatedMetada
           <TagsGroup blogId={blogId} />
           {windowSize === 'mobile' && asset && (
             <div className={styles.mobileImageWrapper}>
-              <Image
-                img={asset}
-                className={styles.imageWrapper}
-                alt="Illustration"
-              />
+              <div className={styles.imageWrapper}>
+                <Image
+                  img={asset}
+                  alt="Illustration"
+                />
+              </div>
             </div>
           )}
         </div>
@@ -42,16 +43,17 @@ export function BlogListPageHeader({ metadata }: { metadata: BlogPaginatedMetada
             <p key={index}>{paragraph}</p>
           ))}</div>
           {windowSize === 'desktop' && asset && (
-            <Image
-              img={asset}
-              alt="Illustration"
-              className={styles.imageWrapper}
-              style={{
-                maxWidth: 400,
-                maxHeight: 400,
-                width: '100%',
-              }}
-            />
+            <div className={styles.imageWrapper}>
+              <Image
+                img={asset}
+                alt="Illustration"
+                style={{
+                  maxWidth: 400,
+                  maxHeight: 400,
+                  width: '100%',
+                }}
+              />
+            </div>
           )}
         </div>
       </div>

@@ -7,7 +7,11 @@ import Image from '@theme/IdealImage';
 export function OpportunityCard({ post }: BlogPostCardProps) {
   return (
     <a href={post.permalink} className={styles.card}>
-      {post.image && <Image className={styles.previewImage} img={post.image} alt={post.title} />}
+      {post.image &&
+        <div className={styles.previewImage}>
+          <Image img={post.image} alt={post.title} />
+        </div>
+      }
 
       {Boolean(post.tags.length) &&
         <div className={styles.tagsGroup}>

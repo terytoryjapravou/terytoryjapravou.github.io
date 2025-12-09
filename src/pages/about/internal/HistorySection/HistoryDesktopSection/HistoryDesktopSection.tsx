@@ -126,13 +126,17 @@ export const HistoryDesktopSection = () => {
               transition={{ duration: 0.6, delay: index * 0.05 }}
             >
               {milestone.pictureFirst && (
-                <Image img={milestone.picture} alt="" className={styles.milestonePicture} />
+                <div className={styles.milestonePicture}>
+                  <Image img={milestone.picture} alt="" />
+                </div>
               )}
               <h4 className={styles.milestoneTitle}>
                 {milestone.title}
               </h4>
               {!milestone.pictureFirst && (
-                <Image img={milestone.picture} alt="" className={styles.milestonePicture} />
+                <div className={styles.milestonePicture}>
+                  <Image img={milestone.picture} alt="" />
+                </div>
               )}
               <p className={styles.milestoneDescription}>
                 {milestone.description.split('\n').map((line, i) => (
@@ -147,11 +151,19 @@ export const HistoryDesktopSection = () => {
 
           <Map className={styles.map} />
           <Timeline className={styles.timeline} />
-          <Image img={Location} alt="Location" className={styles.location} />
-          <Image img={Calendar} alt="Calendar" className={styles.calendar} />
-          <Image img={Ptushka} alt="Ptushka" className={styles.ptushka} />
+
+          <div className={styles.location} >
+            <Image img={Location} />
+          </div>
+          <div className={styles.calendar}>
+            <Image img={Calendar} />
+          </div>
+          <div className={styles.ptushka}>
+            <Image img={Ptushka} />
+          </div>
+
         </motion.div>
-      </div>
-    </section>
+      </div >
+    </section >
   )
 }

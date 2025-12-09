@@ -57,7 +57,7 @@ const milestones = [
   {
     key: 'm6',
     picture: Laptop,
-    title: '20 лістапада 2025',
+    title: '10 снежня 2025',
     description: 'запусцілі сайт\nterytoryja-pravou.org',
     pictureFirst: false
   },

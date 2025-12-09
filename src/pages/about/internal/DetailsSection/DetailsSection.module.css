@@ -10,10 +10,46 @@
   gap: 16px;
 }
 
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.listItem::before {
+  content: "";
+  background-image: url(./assets/check.png);
+  display: block;
+  width: 54px;
+  min-width: 54px;
+  height: 69px;
+  background-size: 100% 100%;
+}
+
 @media (max-width: 996px) {
   .wrapper {
     padding-inline: 16px;
     padding-block: 16px;
     gap: 4px;
+  }
+
+  .listItem {
+    gap: 21px;
+  }
+
+  .listItem::before {
+    width: 27px;
+    min-width: 27px;
+    height: 34px;
   }
 }

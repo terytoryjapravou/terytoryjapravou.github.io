@@ -11,7 +11,9 @@ export function EducationCourseCard() {
         Educational Course "Territory of Rights"
       </h3>
 
-      <Image img={GridImg} alt="" className={styles.image} />
+      <div className={styles.image}>
+        <Image img={GridImg} />
+      </div>
 
       <p className={styles.description}>
         Our flagship course is designed for those who want to start from the beginning and understand

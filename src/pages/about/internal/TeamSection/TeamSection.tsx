@@ -27,10 +27,21 @@ export function TeamSection() {
           <Badge name="Захар" position="тэхнічны менеджар" className={styles.badge2} />
           <Badge name='Насця' position='дызайнерка' className={styles.badge4} />
 
-          <Image img={Team} className={styles.image} />
+          <div className={styles.image}>
+            <Image img={Team} />
+          </div>
 
-          {windowSize === 'desktop' && <Image img={Pointers} className={styles.pointers} />}
-          {windowSize === 'mobile' && <Image img={PointersMobile} className={styles.pointersMobile} />}
+          {windowSize === 'desktop' &&
+            <div className={styles.pointers}>
+              <Image img={Pointers} />
+            </div>
+          }
+
+          {windowSize === 'mobile' &&
+            <div className={styles.pointersMobile}>
+              <Image img={PointersMobile} />
+            </div>
+          }
         </div>
 
       </div>

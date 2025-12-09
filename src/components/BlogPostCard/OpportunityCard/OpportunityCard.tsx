@@ -3,11 +3,17 @@ import styles from "./OpportunityCard.module.css"
 import { Button } from "@site/src/components/Button/Button"
 import { BlogPostCardProps } from "../BlogPostCardProps"
 import Image from '@theme/IdealImage';
+import Placeholder from './assets/placeholder.jpeg'
 
 export function OpportunityCard({ post }: BlogPostCardProps) {
   return (
     <a href={post.permalink} className={styles.card}>
-      {post.image && <Image className={styles.previewImage} img={post.image} alt={post.title} />}
+      <div className={styles.previewImage}>
+        {post.image ?
+          <Image img={post.image} alt={post.title} /> :
+          <Image img={Placeholder} />
+        }
+      </div>
 
       {Boolean(post.tags.length) &&
         <div className={styles.tagsGroup}>

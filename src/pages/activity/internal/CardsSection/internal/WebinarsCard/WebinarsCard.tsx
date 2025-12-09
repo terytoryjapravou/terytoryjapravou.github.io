@@ -26,7 +26,9 @@ export function WebinarsCard() {
         </p>
       </div>
 
-      <Image img={Webinar} className={styles.image} />
+      <div className={styles.image}>
+        <Image img={Webinar} />
+      </div>
 
       <a href={TG_LINK} target='_blank' rel='noopener noreferrer' className={styles.tg}>
         <span>Падпісацца на наш Telegram, каб атрымліваць анонсы</span>

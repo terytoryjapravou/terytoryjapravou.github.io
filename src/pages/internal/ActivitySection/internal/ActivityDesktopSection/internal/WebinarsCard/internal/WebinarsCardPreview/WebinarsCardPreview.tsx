@@ -14,11 +14,9 @@ export const WebinarsCardPreview = () => {
         і яго ўплыву на правы чалавека.
       </div>
 
-
-      <Image
-        img={Illustration}
-        className={styles.image}
-      />
+      <div className={styles.image}>
+        <Image img={Illustration} />
+      </div>
     </div>
   )
 }

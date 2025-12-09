@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Onest:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;600&display=swap');
 
 @font-face {
   font-family: 'By_terytoryja_pravou';
-  src: url('../../static/fonts/By_terytoryja_pravou-Regular.ttf') format('truetype');
+  src: url('../../static/fonts/Terytoryja_pravou-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-}
-
-:root[lang="en-US"] {
-  --font-handwritten: 'Homemade Apple', cursive;
 }
 
 :root {

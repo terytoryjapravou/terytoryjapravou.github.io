@@ -15,8 +15,12 @@ export function HeaderSection() {
         <p className={styles.description}>
           <Mark variant='underline'>Нашы прапановы</Mark>, якія могуць дапамагчы табе стать бліжэй да разумення правоў чалавека.
         </p>
-        <Image img={Dama} alt="" className={styles.pic1} />
-        <Image img={Group} alt="" className={styles.pic2} />
+        <div className={styles.pic1}>
+          <Image img={Dama} />
+        </div>
+        <div className={styles.pic2}>
+          <Image img={Group} />
+        </div>
       </div>
     </header>
   )

@@ -1,6 +1,6 @@
 import { Mark } from '@site/src/components/Mark/Mark'
 import Image from '@theme/IdealImage';
-import DonateBig from './assets/DonateBig.png'
+import DonateBig from './assets/illystration_7.png'
 
 import styles from './WhySection.module.css'
 
@@ -9,7 +9,9 @@ export function WhySection() {
     <section>
       <div className={styles.wrapper}>
         <h2 className={styles.title}>Чаму ваш данат важны</h2>
-        <Image img={DonateBig} alt="" className={styles.image} />
+        <div className={styles.image}>
+          <Image img={DonateBig} />
+        </div>
         <p className={styles.content}>
           Кожная наша адукацыйная праграма, матэрыял —
           гэта праца людзей, якія хочуць <Mark variant="underline">дапамагчы</Mark> іншым <Mark variant='rounded'>ведаць</Mark> і разумець <Mark variant="underline">свае правы</Mark>,

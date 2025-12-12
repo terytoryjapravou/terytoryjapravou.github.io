@@ -9,6 +9,19 @@ const config: Config = {
   tagline: 'Асветніцка-адукацыйная ініцыятыва пра правы чалавека для прадстаў_ніц беларускага грамадства',
   favicon: 'img/favicon.svg',
 
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/img/favicon.png',
+      },
+    },
+  ],
+
+
+
   url: 'https://terytoryja-pravou.org',
   baseUrl: '/',
 

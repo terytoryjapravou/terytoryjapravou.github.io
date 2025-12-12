@@ -1,7 +1,7 @@
 import styles from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/HistoryDesktopSection.module.css'
 import Image from '@theme/IdealImage';
 import Map from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Map.svg'
-import Timeline from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Timeline.png'
+import Timeline from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Timeline.svg'
 import Location from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Location.png'
 import Calendar from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Calendar.png'
 import Ptushka from '@site/src/pages/about/internal/HistorySection/HistoryDesktopSection/assets/Ptushka.png'
@@ -57,7 +57,7 @@ const milestones = [
   {
     key: 'm6',
     picture: Laptop,
-    title: 'November 20, 2025',
+    title: 'December 10, 2025',
     description: 'launched the website\nterytoryja-pravou.org',
     pictureFirst: false
   },
@@ -126,13 +126,17 @@ export const HistoryDesktopSection = () => {
               transition={{ duration: 0.6, delay: index * 0.05 }}
             >
               {milestone.pictureFirst && (
-                <Image img={milestone.picture} alt="" className={styles.milestonePicture} />
+                <div className={styles.milestonePicture}>
+                  <Image img={milestone.picture} />
+                </div>
               )}
               <h4 className={styles.milestoneTitle}>
                 {milestone.title}
               </h4>
               {!milestone.pictureFirst && (
-                <Image img={milestone.picture} alt="" className={styles.milestonePicture} />
+                <div className={styles.milestonePicture}>
+                  <Image img={milestone.picture} />
+                </div>
               )}
               <p className={styles.milestoneDescription}>
                 {milestone.description.split('\n').map((line, i) => (
@@ -146,10 +150,17 @@ export const HistoryDesktopSection = () => {
           ))}
 
           <Map className={styles.map} />
-          <Image img={Timeline} alt="Timeline" className={styles.timeline} />
-          <Image img={Location} alt="Location" className={styles.location} />
-          <Image img={Calendar} alt="Calendar" className={styles.calendar} />
-          <Image img={Ptushka} alt="Bird" className={styles.ptushka} />
+          <Timeline className={styles.timeline} />
+
+          <div className={styles.location} >
+            <Image img={Location} />
+          </div>
+          <div className={styles.calendar}>
+            <Image img={Calendar} />
+          </div>
+          <div className={styles.ptushka}>
+            <Image img={Ptushka} />
+          </div>
         </motion.div>
       </div>
     </section>

@@ -1,0 +1,34 @@
+import { SectionHeader } from "@site/src/components/SectionHeader/SectionHeader";
+import styles from "@site/src/pages/internal/RecentOpportunitiesSection/RecentOpportunitiesSection.module.css";
+import { useWindowSize } from "@docusaurus/theme-common";
+import { useLoadBlogData } from "@site/src/hooks/useBlogData";
+import { OpportunityCard } from "@site/src/components/BlogPostCard/OpportunityCard/OpportunityCard";
+
+
+export function RecentOpportunitiesSection() {
+  const { posts, loading } = useLoadBlogData('opportunities')
+  const screenSize = useWindowSize()
+
+  const articlesCount = screenSize === 'mobile' ? 1 : 3
+
+  if (loading) return null
+  if (posts.length === 0) return null
+
+  return (
+    <section className={styles.section}>
+      <div className={styles.opportunities}>
+        <SectionHeader
+          title={<a href="/opportunities">Opportunities</a>}
+          subtitle="Read more"
+          href="/opportunities"
+        />
+
+        <div className={styles.content}>
+          {posts.slice(0, articlesCount).map((post) =>
+            <OpportunityCard key={post.id} post={post} />
+          )}
+        </div>
+      </div>
+    </section>
+  )
+}

@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'By_terytoryja_pravou';
-  src: url('../../static/fonts/By_terytoryja_pravou-Regular.ttf') format('truetype');
+  src: url('../../static/fonts/Terytoryja_pravou-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -12,10 +12,11 @@
   /* Typography */
   --font-primary: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-handwritten: 'By_terytoryja_pravou', cursive;
-  /* --font-handwritten: 'Biro Script Plus', cursive; */
 
   /* Screen */
   --screen-lg: 1440px;
+  --screen-md: 1200px;
+
 
   /* Font sizes */
   --font-size-h1: 64px;

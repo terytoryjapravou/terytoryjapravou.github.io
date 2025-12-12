@@ -3,7 +3,7 @@ import BlogPostItemContainer from '@theme/BlogPostItem/Container'
 import BlogPostItemHeader from '@theme/BlogPostItem/Header'
 import BlogPostItemContent from '@theme/BlogPostItem/Content'
 import BlogPostItemFooter from '@theme/BlogPostItem/Footer'
-import type {Props} from '@theme/BlogPostItem'
+import type { Props } from '@theme/BlogPostItem'
 
 export default function BlogPostItem({ children }: Props): JSX.Element {
 

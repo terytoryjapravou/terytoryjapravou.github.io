@@ -16,7 +16,9 @@ export function Stripe({ className }: StripeProps) {
     <a href={STRIPE_LINK} target='_blank' rel="noopener noreferrer" className={clsx(styles.card, className)}>
       <h3 className={styles.title}>Stripe</h3>
       <span className={styles.subtitle}>Хуткія і бяспечныя разавыя данаты любой сумы.</span>
-      <Image img={StripeImage} alt="Stripe" className={styles.content} />
+      <div className={styles.content}>
+        <Image img={StripeImage} />
+      </div>
       <Tag className={styles.tag}>Падтрымаць праз Stripe</Tag>
     </a>
   )

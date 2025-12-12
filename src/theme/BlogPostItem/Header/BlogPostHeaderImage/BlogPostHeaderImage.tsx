@@ -12,5 +12,9 @@ export function BlogPostHeaderImage() {
     return null
   }
 
-  return <Image className={styles.image} img={image} alt={description} />
+  return (
+    <div className={styles.image}>
+      <Image img={image} alt={description} />
+    </div>
+  )
 }

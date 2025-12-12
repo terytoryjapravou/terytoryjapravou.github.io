@@ -1,6 +1,6 @@
 import { Card } from "@site/src/pages/activity/internal/CardsSection/internal/Card/Card"
 import Image from '@theme/IdealImage';
-import GridImg from '@site/src/pages/activity/internal/CardsSection/internal/EducationCourseCard/assets/Grid.png'
+import GridImg from '@site/src/pages/activity/internal/CardsSection/internal/EducationCourseCard/assets/Kurs.png'
 
 import styles from '@site/src/pages/activity/internal/CardsSection/internal/EducationCourseCard/EducationCourseCard.module.css'
 
@@ -11,7 +11,9 @@ export function EducationCourseCard() {
         Educational Course "Territory of Rights"
       </h3>
 
-      <Image img={GridImg} alt="" className={styles.image} />
+      <div className={styles.image}>
+        <Image img={GridImg} />
+      </div>
 
       <p className={styles.description}>
         Our flagship course is designed for those who want to start from the beginning and understand

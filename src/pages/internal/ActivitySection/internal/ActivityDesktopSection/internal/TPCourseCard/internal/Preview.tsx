@@ -6,13 +6,14 @@ export function Preview() {
   return (
     <>
       <div className={styles.preview}>
-        <Image
-          img={Gramafon}
-          alt="Адукацыйны курс «Тэрыторыя правоў»"
-          width={507}
-          height={570}
-          className={styles.image}
-        />
+        <div className={styles.image} >
+          <Image
+            img={Gramafon}
+            alt="Адукацыйны курс «Тэрыторыя правоў»"
+            width={507}
+            height={570}
+          />
+        </div>
       </div>
 
       <div className={styles.square} />

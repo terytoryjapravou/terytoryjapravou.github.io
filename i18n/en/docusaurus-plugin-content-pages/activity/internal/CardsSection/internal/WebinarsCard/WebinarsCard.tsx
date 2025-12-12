@@ -1,6 +1,6 @@
 import { Card } from '@site/src/pages/activity/internal/CardsSection/internal/Card/Card'
 import Image from '@theme/IdealImage';
-import Grid from '@site/src/pages/activity/internal/CardsSection/internal/WebinarsCard/assets/grid.png'
+import Grid from '@site/src/pages/activity/internal/CardsSection/internal/WebinarsCard/assets/Vebinar.png'
 import TgLogo from '@site/src/pages/activity/internal/CardsSection/internal/WebinarsCard/assets/tg.svg'
 
 import { TG_LINK } from '@site/src/constants/socialLinks'
@@ -25,7 +25,9 @@ export function WebinarsCard() {
         </p>
       </div>
 
-      <Image img={Grid} alt="" className={styles.image} />
+      <div className={styles.image}>
+        <Image img={Grid} />
+      </div>
 
       <a href={TG_LINK} target='_blank' rel='noopener noreferrer' className={styles.tg}>
         <span>Subscribe to our Telegram to receive announcements</span>

@@ -3,11 +3,17 @@ import styles from "./OpportunityCard.module.css"
 import { Button } from "@site/src/components/Button/Button"
 import { BlogPostCardProps } from "../BlogPostCardProps"
 import Image from '@theme/IdealImage';
+import Placeholder from './assets/placeholder.jpeg'
 
 export function OpportunityCard({ post }: BlogPostCardProps) {
   return (
-    <div className={styles.card}>
-      {post.image && <Image className={styles.previewImage} img={post.image} alt={post.title} />}
+    <a href={post.permalink} className={styles.card}>
+      <div className={styles.previewImage}>
+        {post.image ?
+          <Image img={post.image} alt={post.title} /> :
+          <Image img={Placeholder} />
+        }
+      </div>
 
       {Boolean(post.tags.length) &&
         <div className={styles.tagsGroup}>
@@ -19,12 +25,11 @@ export function OpportunityCard({ post }: BlogPostCardProps) {
 
       <div className={styles.content}>
         <div className={styles.title}>{post.title}</div>
-        <div className={styles.description}>{post.description}</div>
       </div>
 
-      <Button href={post.permalink}>
+      <Button href={post.permalink} className={styles.button}>
         Запісацца
       </Button>
-    </div>
+    </a>
   )
 }

@@ -7,7 +7,7 @@ export const EducationCardContent = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.card}>
-        <IgLogo />
+        <IgLogo className={styles.logo} />
         <div className={styles.cardContent}>
           <div className={styles.textContent}>
             <b>On our Instagram</b> —
@@ -23,28 +23,33 @@ export const EducationCardContent = () => {
       </div>
 
       <div className={styles.card}>
-        <TgLogo />
+        <TgLogo className={styles.logo} />
         <div className={styles.cardContent}>
           <div className={styles.textContent}>
             <b>Telegram</b><br />
             opportunities for those who want to learn, develop and act:
-
-            <ul className={styles.listContent}>
-              <li className={styles.listItem}>courses</li>
-              <li className={styles.listItem}>internships</li>
-              <li className={styles.listItem}>support</li>
-            </ul>
           </div>
+
+          <ul className={styles.listContent}>
+            <li className={styles.listItem}>courses</li>
+            <li className={styles.listItem}>internships</li>
+            <li className={styles.listItem}>support</li>
+          </ul>
         </div>
       </div>
 
       <div className={styles.card}>
-        <FbLogo />
+        <FbLogo className={styles.logo} />
         <div className={styles.cardContent}>
           <div className={styles.textContent}>
-            <b>On Facebook</b> — complex topics explained simply:
-            materials on human rights, explanations, collections
+            <b>On Facebook</b> — deepen your knowledge of human rights:
           </div>
+
+          <ul className={styles.listContent}>
+            <li className={styles.listItem}>articles</li>
+            <li className={styles.listItem}>educational materials</li>
+            <li className={styles.listItem}>useful collections</li>
+          </ul>
         </div>
       </div>
     </div>

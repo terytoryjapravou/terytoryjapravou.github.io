@@ -1,5 +1,5 @@
 ---
-title: "Чарнавік артыкула"
+title: "Сумнявацца нельга верыць"
 tags: [theory]
 image: "./2025-12-12-sumnavatsa.png"
 hide_table_of_contents: true

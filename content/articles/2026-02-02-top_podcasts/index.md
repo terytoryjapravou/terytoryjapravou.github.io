@@ -1,6 +1,6 @@
 ---
 title: "Топ падборка падкастаў пра правы чалавека"
-tags: [top] [belarusian-language]
+tags: [top]
 image: "./2026-02-02-top_podcasts.png"
 ---
 # Топ падборка падкастаў пра правы чалавека

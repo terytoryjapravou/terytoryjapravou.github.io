@@ -33,27 +33,3 @@ theory:
 news:
   label: 'Навіны'
   permalink: '/news'
-
-educationhr:
-  label: '#правыпрастымісловамі'
-  permalink: '/educationhr'
-
-practice:
-  label: 'Практыка'
-  permalink: '/practice'
-
-opinion:
-  label: 'Меркаванне'
-  permalink: '/opinion'
-
-international:
-  label: 'Міжнародны кантэкст'
-  permalink: '/international'
-
-history:
-  label: 'Гісторыя'
-  permalink: '/history'
-
-belarushr:
-  label: 'БеларусьІПравы'
-  permalink: '/belarushr'

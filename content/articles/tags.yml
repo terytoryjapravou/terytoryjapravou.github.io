@@ -33,3 +33,31 @@ theory:
 news:
   label: 'Навіны'
   permalink: '/news'
+
+texts:
+  label: 'Тэксты'
+  permalink: '/texts'
+
+opinion:
+  label: 'Меркаванне'
+  permalink: '/opinion'
+
+cases:
+  label: 'Кейсы'
+  permalink: '/cases'
+
+practice:
+  label: 'Практыка'
+  permalink: '/practice'
+
+education:
+  label: 'Праваадукацыя'
+  permalink: '/education'
+
+international:
+  label: 'Міжнародны кантэкст'
+  permalink: '/international'
+
+tools:
+  label: 'Інструменты'
+  permalink: '/tools'

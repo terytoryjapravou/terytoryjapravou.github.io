@@ -61,3 +61,11 @@ international:
 tools:
   label: 'Інструменты'
   permalink: '/tools'
+
+humanrights:
+  label: 'Правы чалавека'
+  permalink: '/humanrights'
+
+recommend:
+  label: 'Рэкамендацыі'
+  permalink: '/recommend'

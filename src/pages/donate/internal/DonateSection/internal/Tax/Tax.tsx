@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import styles from './Tax.module.css'
 import { Tag } from '@site/src/components/Tag/Tag'
 import { Mark } from '@site/src/components/Mark/Mark'
+import { TAX_INSTRUCTION_LINK } from '@site/src/constants/donateLink'
 
 type TaxProps = {
   className?: string
@@ -23,7 +24,8 @@ export function Tax({ className }: TaxProps) {
         Калі вы не выберыце нікога ў дэкларацыі, гэтыя сродкі будуць пералічаныя дзяржаве.
       </span>
       <span className={styles.instruction}>Усе крокі сабралі ў адной кароткай інструкцыі</span>
-      <Tag href='#' className={styles.tag}>Глядзець інструкцыю</Tag>
+
+      <Tag target='_blank' rel="noopener noreferrer" href={TAX_INSTRUCTION_LINK} className={styles.tag}>Глядзець інструкцыю</Tag>
     </div>
   )
 }

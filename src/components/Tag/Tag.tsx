@@ -2,13 +2,21 @@ import { PropsWithChildren } from 'react'
 import styles from './Tag.module.css'
 import clsx from 'clsx'
 
-type TagProps = PropsWithChildren<{
+type LinkTag = {
   href?: string
+  target?: string
+  rel?: string
   className?: string
-}>
+}
 
-export function Tag({ children, href, className }: TagProps) {
-  return href ?
-    <a href={href} className={clsx(styles.tag, styles.link, className)}>{children}</a> :
+type SpanTag = {
+  className?: string
+}
+
+type TagProps = PropsWithChildren<LinkTag | SpanTag>
+
+export function Tag({ children, className, ...props }: TagProps) {
+  return 'href' in props ?
+    <a href={props.href} className={clsx(styles.tag, styles.link, className)} {...props}>{children}</a> :
     <span className={clsx(styles.tag, className)}>{children}</span>
 }
